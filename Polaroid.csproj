@@ -72,20 +72,20 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Authorization.cs">
+    <Compile Include="DataBase\Authorization.cs">
       <DependentUpon>BD.tt</DependentUpon>
     </Compile>
-    <Compile Include="BD.Context.cs">
+    <Compile Include="DataBase\BD.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>BD.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="BD.cs">
+    <Compile Include="DataBase\BD.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>BD.tt</DependentUpon>
     </Compile>
-    <Compile Include="BD.Designer.cs">
+    <Compile Include="DataBase\BD.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>BD.edmx</DependentUpon>
@@ -113,11 +113,11 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EntityDeploy Include="BD.edmx">
+    <EntityDeploy Include="DataBase\BD.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>BD.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="BD.edmx.diagram">
+    <None Include="DataBase\BD.edmx.diagram">
       <DependentUpon>BD.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
@@ -130,12 +130,12 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="BD.Context.tt">
+    <Content Include="DataBase\BD.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>BD.Context.cs</LastGenOutput>
       <DependentUpon>BD.edmx</DependentUpon>
     </Content>
-    <Content Include="BD.tt">
+    <Content Include="DataBase\BD.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>BD.edmx</DependentUpon>
       <LastGenOutput>BD.cs</LastGenOutput>
