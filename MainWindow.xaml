@@ -11,6 +11,5 @@
         <Button Name="Category_Btn" Content="Категории" HorizontalAlignment="Left" Margin="435.6,135,0,0" VerticalAlignment="Top" Height="35" Width="190" FontFamily="Arial"/>
         <Button Name ="Authorization_Btn" Content="Авторизация" HorizontalAlignment="Left" Margin="645,135,0,0" VerticalAlignment="Top" Height="35" Width="190" FontFamily="Arial"/>
         <Button Name="Info_Btn" Content="Об Организации" HorizontalAlignment="Left" Margin="867.9,135,0,0" VerticalAlignment="Top" Height="35" Width="190" FontFamily="Arial"/>
-
     </Grid>
 </Window>
