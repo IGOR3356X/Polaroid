@@ -24,5 +24,7 @@ namespace Polaroid
         {
             InitializeComponent();
         }
+
+        
     }
 }
