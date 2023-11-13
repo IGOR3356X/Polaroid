@@ -13,21 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Polaroid
+namespace Polaroid.Pages.Authorization
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для Authorization.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Authorization : Page
     {
-        public MainWindow()
+        public Authorization()
         {
             InitializeComponent();
-        }
-
-        private void Authorization_Btn_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }

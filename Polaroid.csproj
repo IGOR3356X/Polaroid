@@ -64,6 +64,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Pages\Authorization\Authorization.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\MainWindow\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -72,6 +76,8 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="ContentObjects\Connect.cs" />
+    <Compile Include="ContentObjects\Navigating.cs" />
     <Compile Include="DataBase\Authorization.cs">
       <DependentUpon>BD.tt</DependentUpon>
     </Compile>
@@ -92,6 +98,9 @@
     </Compile>
     <Compile Include="DataBase\Items.cs">
       <DependentUpon>BD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Authorization\Authorization.xaml.cs">
+      <DependentUpon>Authorization.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\MainWindow\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -151,7 +160,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Images\" />
-    <Folder Include="Pages\Authorization\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
