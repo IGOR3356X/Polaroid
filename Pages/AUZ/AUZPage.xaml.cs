@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Polaroid.Pages.Authorization
+namespace Polaroid.Pages.AUZ
 {
     /// <summary>
-    /// Логика взаимодействия для Authorization.xaml
+    /// Логика взаимодействия для AUZPage.xaml
     /// </summary>
-    public partial class Authorization : Page
+    public partial class AUZPage : Page
     {
-        public Authorization()
+        public AUZPage()
         {
             InitializeComponent();
         }
