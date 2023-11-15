@@ -1,7 +1,4 @@
-﻿using Polaroid.ContentObjects;
-using Polaroid.Pages.AUZ;
-using Polaroid.Pages.RegisterFolder;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,21 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Polaroid.Pages.GlavPage
+namespace Polaroid.Pages.Admin_Main
 {
     /// <summary>
-    /// Логика взаимодействия для Main.xaml
+    /// Логика взаимодействия для AdmMain.xaml
     /// </summary>
-    public partial class Main : Page
+    public partial class AdmMain : Page
     {
-        public Main()
+        public AdmMain()
         {
             InitializeComponent();
-        }
-
-        private void Authorization_Btn_Click(object sender, RoutedEventArgs e)
-        {
-            Navigating.nav.Navigate(new AUZPage());
         }
     }
 }

@@ -1,6 +1,4 @@
-﻿using Polaroid.ContentObjects;
-using Polaroid.Pages.GlavPage;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,19 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Polaroid
+namespace Polaroid.Pages.Categories
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для CategoriesPage.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class CategoriesPage : Page
     {
-        public MainWindow()
+        public CategoriesPage()
         {
             InitializeComponent();
-
-            Navigating.nav = FrmMain;
-            FrmMain.Navigate(new Glavnaya());
         }
     }
 }

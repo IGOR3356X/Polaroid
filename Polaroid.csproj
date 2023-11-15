@@ -64,7 +64,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Pages\Admin Main\AdmMain.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\AUZ\AUZPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Categories\CategoriesPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -72,7 +80,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Pages\GlavPage\Main.xaml">
+    <Page Include="Pages\GlavPage\Glavnaya.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -110,14 +118,20 @@
     <Compile Include="DataBase\Role.cs">
       <DependentUpon>BD.tt</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Admin Main\AdmMain.xaml.cs">
+      <DependentUpon>AdmMain.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\AUZ\AUZPage.xaml.cs">
       <DependentUpon>AUZPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Categories\CategoriesPage.xaml.cs">
+      <DependentUpon>CategoriesPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\Register\RegisterPage.xaml.cs">
       <DependentUpon>RegisterPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\GlavPage\Main.xaml.cs">
-      <DependentUpon>Main.xaml</DependentUpon>
+    <Compile Include="Pages\GlavPage\Glavnaya.xaml.cs">
+      <DependentUpon>Glavnaya.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\MainWindowPage\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
