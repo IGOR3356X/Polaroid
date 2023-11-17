@@ -17,6 +17,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Polaroid.Pages.Categories;
+using Polaroid.Pages.About_Us;
 
 namespace Polaroid.Pages.AUZ
 {
@@ -78,10 +80,24 @@ namespace Polaroid.Pages.AUZ
         {
             Navigating.nav.Navigate(new RegisterPage());
         }
+        private void Manin_Btn_Click(object sender, RoutedEventArgs e)
+        {
+            Navigating.nav.Navigate(new Glavnaya());
+        }
 
-        private void TxbLogin_TextChanged(object sender, TextChangedEventArgs e)
+        private void Category_Btn_Click(object sender, RoutedEventArgs e)
+        {
+            Navigating.nav.Navigate(new CategoriesPage());
+        }
+
+        private void Authorization_Btn_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void Info_Btn_Click(object sender, RoutedEventArgs e)
+        {
+            Navigating.nav.Navigate(new SUSPage());
         }
     }
 }
