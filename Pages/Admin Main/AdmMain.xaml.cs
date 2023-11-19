@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Polaroid.ContentObjects;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,21 @@ namespace Polaroid.Pages.Admin_Main
         public AdmMain()
         {
             InitializeComponent();
+        }
+
+        private void Item_Btn_Click(object sender, RoutedEventArgs e)
+        {
+            Navigating.nav.Navigate(new ItemControl());
+        }
+
+        private void User_Btn_Click(object sender, RoutedEventArgs e)
+        {
+            Navigating.nav.Navigate(new UserControl());
+        }
+
+        private void Back_Btn_Click(object sender, RoutedEventArgs e)
+        {
+            Navigating.nav.GoBack();
         }
     }
 }

@@ -68,7 +68,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\Admin Main\AddItem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\Admin Main\AdmMain.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Admin Main\ItemControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Admin Main\UserControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -113,9 +125,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BD.edmx</DependentUpon>
     </Compile>
-    <Compile Include="DataBase\Categories.cs">
-      <DependentUpon>BD.tt</DependentUpon>
-    </Compile>
     <Compile Include="DataBase\Items.cs">
       <DependentUpon>BD.tt</DependentUpon>
     </Compile>
@@ -128,8 +137,17 @@
     <Compile Include="Pages\About Us\SUSPage.xaml.cs">
       <DependentUpon>SUSPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Admin Main\AddItem.xaml.cs">
+      <DependentUpon>AddItem.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Admin Main\AdmMain.xaml.cs">
       <DependentUpon>AdmMain.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Admin Main\ItemControl.xaml.cs">
+      <DependentUpon>ItemControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Admin Main\UserControl.xaml.cs">
+      <DependentUpon>UserControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\AUZ\AUZPage.xaml.cs">
       <DependentUpon>AUZPage.xaml</DependentUpon>

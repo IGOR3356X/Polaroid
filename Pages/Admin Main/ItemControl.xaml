@@ -1,0 +1,57 @@
+﻿<Page x:Class="Polaroid.Pages.Admin_Main.ItemControl"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Polaroid.Pages.Admin_Main"
+      mc:Ignorable="d" 
+      d:DesignHeight="720" d:DesignWidth="1280"
+      Title="ItemControl" Background="White">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="10*"/>
+        </Grid.RowDefinitions>
+        <DockPanel>
+            <Label Grid.RowSpan="2" VerticalAlignment="Center" FontSize="18">Admin</Label>
+            <Button 
+                Name="AddItem_Btn"
+                Content="Добавить товар"
+                Click="AddItem_Btn_Click"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Left"/>
+        </DockPanel>
+        <DockPanel VerticalAlignment="Center" HorizontalAlignment="Right">
+            <Button Name="Btn_Exit" Content="Вернуться" Click="Btn_Exit_Click" Margin="10 0 20 0" Height="28" Width="75"/> 
+        </DockPanel>
+
+        <DockPanel Grid.Row="1">
+            <DataGrid 
+                Name="DgProducts"
+                IsReadOnly="True"
+                AutoGenerateColumns="False"
+                RowBackground="LightBlue"
+                AlternatingRowBackground="White"
+                HorizontalScrollBarVisibility="Disabled" Height="484" SelectedIndex="2"
+                >
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="IDItem" Width="*" Binding="{Binding IDItem}"/>
+                    <DataGridTextColumn Header="ItemName" Width="*" Binding="{Binding ItemName}"/>
+                    <DataGridTextColumn Header="Price" Width="*" Binding="{Binding Price}"/>
+                    <DataGridTextColumn Header="Discription" Width="*" Binding="{Binding Discription}"/>
+                    <DataGridTextColumn Header="Category" Width="*" Binding="{Binding Category}"/>
+                    <DataGridTemplateColumn>
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button Name="Delete_Btn" Content="Удалить" Click="Delete_Btn_Click"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+        </DockPanel>
+        <Label x:Name="Lablel1" Content="" HorizontalAlignment="Left" Margin="160,615,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <Label x:Name="Lablel2" Content="" HorizontalAlignment="Left" Margin="222,615,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+    </Grid>
+</Page>
