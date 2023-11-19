@@ -20,5 +20,6 @@
         <Rectangle HorizontalAlignment="Center" Height="229" Margin="0,481,0,0" Stroke="Black" VerticalAlignment="Top" Width="258"/>
         <Rectangle HorizontalAlignment="Left" Height="229" Margin="193,481,0,0" Stroke="Black" VerticalAlignment="Top" Width="258"/>
         <Label Content="КАТЕГОРИИ" HorizontalAlignment="Center" Margin="0,134,0,0" VerticalAlignment="Top" Width="223" Height="50" FontSize="36"/>
+        <Button Name="Back_Btn" Content="Назад" HorizontalAlignment="Left" Margin="30,41,0,0" VerticalAlignment="Top" Height="55" Width="146" Click="Back_Btn_Click"/>
     </Grid>
 </Page>

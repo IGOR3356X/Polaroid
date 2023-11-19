@@ -13,17 +13,17 @@
         <Button Name="Category_Btn" Content="Категории" HorizontalAlignment="Left" Margin="434,130,0,0" VerticalAlignment="Top" Height="36" Width="190" FontFamily="Arial" Click="Category_Btn_Click"/>
         <Button Name ="Authorization_Btn" Content="Авторизация" HorizontalAlignment="Left" Margin="643,130,0,0" VerticalAlignment="Top" Height="36" Width="190" FontFamily="Arial" Click="Authorization_Btn_Click"/>
         <Button Name="Info_Btn" Content="Об Организации" HorizontalAlignment="Left" Margin="866,130,0,0" VerticalAlignment="Top" Height="36" Width="190" FontFamily="Arial" Click="Info_Btn_Click"/>
-        <Image HorizontalAlignment="Center" Height="117" Margin="0,19,0,0" VerticalAlignment="Top" Width="194" Source="/i.png">
+        <Image HorizontalAlignment="Center" Height="117" Margin="0,10,0,0" VerticalAlignment="Top" Width="194" Source="/i.png">
             <Image.OpacityMask>
                 <ImageBrush ImageSource="/i.png"/>
             </Image.OpacityMask>
         </Image>
-        <Label Content="Логин" HorizontalAlignment="Left" Margin="458,177,0,0" VerticalAlignment="Top" FontSize="28"/>
-        <TextBox Name="TxbLogin" HorizontalAlignment="Left" Margin="442,224,0,0" Text="ss_mid" TextWrapping="Wrap" VerticalAlignment="Top" Width="378" Height="73" Background="Aqua" FontFamily="Arial" FontSize="58"/>
-        <Label Content="Пароль" HorizontalAlignment="Left" Margin="458,324,0,0" VerticalAlignment="Top" FontSize="28"/>
-        <PasswordBox Name="PassBox" HorizontalAlignment="Center" Margin="0,371,0,0" VerticalAlignment="Top" Width="378" Height="74" Background="Aqua" Password="tinker" FontFamily="Arial" FontSize="58"/>
-        <Label Content="Забыли пароль?" HorizontalAlignment="Left" Margin="726,453,0,0" VerticalAlignment="Top" Width="103"/>
-        <Button Name="Register_Btn" Content="Регистрация" HorizontalAlignment="Left" Margin="458,486,0,0" VerticalAlignment="Top" Width="152" Height="48" Click="Register_Btn_Click" ClickMode="Press"/>
-        <Button Name="Login_Btn" Content="Вход" HorizontalAlignment="Left" Margin="665,486,0,0" VerticalAlignment="Top" Width="152" Height="48" Click="Login_Btn_Click" ClickMode="Press"/>
+        <Label Content="Логин" HorizontalAlignment="Left" Margin="471,201,0,0" VerticalAlignment="Top" FontSize="28"/>
+        <TextBox Name="TxbLogin" HorizontalAlignment="Left" Margin="470,253,0,0" Text="Admin" TextWrapping="Wrap" VerticalAlignment="Top" Width="378" Height="73" Background="Aqua" FontFamily="Arial" FontSize="58"/>
+        <Label Content="Пароль" HorizontalAlignment="Left" Margin="476,338,0,0" VerticalAlignment="Top" FontSize="28"/>
+        <PasswordBox Name="PassBox" HorizontalAlignment="Left" Margin="470,385,0,0" VerticalAlignment="Top" Width="378" Height="74" Background="Aqua" Password="1234" FontFamily="Arial" FontSize="58"/>
+        <Label Content="Забыли пароль?" HorizontalAlignment="Left" Margin="745,464,0,0" VerticalAlignment="Top" Width="103"/>
+        <Button Name="Register_Btn" Content="Регистрация" HorizontalAlignment="Left" Margin="475,496,0,0" VerticalAlignment="Top" Width="152" Height="48" Click="Register_Btn_Click" ClickMode="Press"/>
+        <Button Name="Login_Btn" Content="Вход" HorizontalAlignment="Left" Margin="681,496,0,0" VerticalAlignment="Top" Width="152" Height="48" Click="Login_Btn_Click" ClickMode="Press"/>
     </Grid>
 </Page>

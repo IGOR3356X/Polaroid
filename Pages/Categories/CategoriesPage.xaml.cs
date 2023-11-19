@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Polaroid.ContentObjects;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,11 @@ namespace Polaroid.Pages.Categories
         public CategoriesPage()
         {
             InitializeComponent();
+        }
+
+        private void Back_Btn_Click(object sender, RoutedEventArgs e)
+        {
+            Navigating.nav.GoBack();
         }
     }
 }

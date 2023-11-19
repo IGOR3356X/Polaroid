@@ -98,9 +98,6 @@
     </Compile>
     <Compile Include="ContentObjects\Connect.cs" />
     <Compile Include="ContentObjects\Navigating.cs" />
-    <Compile Include="DataBase\Authorization.cs">
-      <DependentUpon>BD.tt</DependentUpon>
-    </Compile>
     <Compile Include="DataBase\BD.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -123,6 +120,9 @@
       <DependentUpon>BD.tt</DependentUpon>
     </Compile>
     <Compile Include="DataBase\Role.cs">
+      <DependentUpon>BD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\SignIn.cs">
       <DependentUpon>BD.tt</DependentUpon>
     </Compile>
     <Compile Include="Pages\About Us\SUSPage.xaml.cs">
@@ -203,6 +203,7 @@
       <DependentUpon>BD.edmx</DependentUpon>
       <LastGenOutput>BD.cs</LastGenOutput>
     </Content>
+    <Resource Include="Pages\Register\Превью.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

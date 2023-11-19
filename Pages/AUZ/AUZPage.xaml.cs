@@ -39,7 +39,7 @@ namespace Polaroid.Pages.AUZ
                 {
                     if (PassBox.Password != null)
                     {
-                        var data = Connect.connect.Authorization.FirstOrDefault(x => x.Login == TxbLogin.Text && x.Password == PassBox.Password);
+                        var data = Connect.connect.SignIn.FirstOrDefault(x => x.Login == TxbLogin.Text && x.Password == PassBox.Password);
 
                         if (data != null)
                         {
