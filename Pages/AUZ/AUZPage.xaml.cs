@@ -1,24 +1,12 @@
 ﻿using Polaroid.ContentObjects;
+using Polaroid.Pages.About_Us;
 using Polaroid.Pages.Admin_Main;
-using Polaroid.Pages.RegisterFolder;
+using Polaroid.Pages.Categories;
 using Polaroid.Pages.GlavPage;
-using Polaroid.Pages.AUZ;
-using System;
-using System.Collections.Generic;
+using Polaroid.Pages.RegisterFolder;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using Polaroid.Pages.Categories;
-using Polaroid.Pages.About_Us;
 
 namespace Polaroid.Pages.AUZ
 {
@@ -43,7 +31,7 @@ namespace Polaroid.Pages.AUZ
 
                         if (data != null)
                         {
-                            switch (data.Role.Name) 
+                            switch (data.Role.Name)
                             {
                                 case "Admin":
                                     Navigating.nav.Navigate(new AdmMain());
@@ -71,7 +59,7 @@ namespace Polaroid.Pages.AUZ
                     MessageBox.Show("Пароль не может быть пустым", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
             }
-            catch 
+            catch
             {
                 MessageBox.Show("Ошибка в обработке данных", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
             }

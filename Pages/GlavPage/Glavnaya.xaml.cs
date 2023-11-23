@@ -2,21 +2,10 @@
 using Polaroid.Pages.About_Us;
 using Polaroid.Pages.AUZ;
 using Polaroid.Pages.Categories;
-using Polaroid.Pages.RegisterFolder;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Data.SqlClient;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace Polaroid.Pages.GlavPage
 {
@@ -28,6 +17,8 @@ namespace Polaroid.Pages.GlavPage
         public Glavnaya()
         {
             InitializeComponent();
+            LoadDataFromDatabase();
+            LoadPriseFromDatabase();
         }
 
         private void Authorization_Btn_Click(object sender, RoutedEventArgs e)
@@ -43,6 +34,77 @@ namespace Polaroid.Pages.GlavPage
         private void Info_Btn_Click(object sender, RoutedEventArgs e)
         {
             Navigating.nav.Navigate(new SUSPage());
+        }
+
+        private const string connectionString = "Data Source=DESKTOP-CCP78NP\\SQLEXPRESS;Initial Catalog=Polaroid;Integrated Security=True"; // Заменить на свою строку подключения
+        private void LoadDataFromDatabase()
+        {
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+
+                    string query = "SELECT ItemName FROM Items";
+                    SqlCommand command = new SqlCommand(query, connection);
+
+                    SqlDataReader reader = command.ExecuteReader();
+
+                    int index = 0;
+                    while (reader.Read())
+                    {
+                        string itemName = reader.GetString(0);
+
+                        TextBlock textBlock = FindName("texblock" + (index + 1)) as TextBlock; // Получение соответствующего textblock-элемента по имени
+                        if (textBlock != null)
+                        {
+                            textBlock.Text = itemName; // Заполнение содержимого textblock-элемента
+                            index++;
+                        }
+                    }
+
+                    reader.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
+        }
+
+        private void LoadPriseFromDatabase()
+        {
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+
+                    string query = "SELECT Price FROM Items";
+                    SqlCommand command = new SqlCommand(query, connection);
+
+                    SqlDataReader reader = command.ExecuteReader();
+
+                    int index = 0;
+                    while (reader.Read())
+                    {
+                        decimal Prise = reader.GetDecimal(0);
+
+                        TextBlock textBlock = FindName("textobloko" + (index + 1)) as TextBlock; // Получение соответствующего textblock-элемента по имени
+                        if (textBlock != null)
+                        {
+                            textBlock.Text = Prise.ToString() + '₽'; // Заполнение содержимого textblock-элемента
+                            index++;
+                        }
+                    }
+
+                    reader.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
         }
     }
 }

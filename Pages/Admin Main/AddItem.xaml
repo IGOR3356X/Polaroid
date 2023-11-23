@@ -9,9 +9,5 @@
       Title="AddItem" Background="White">
 
     <Grid>
-        <Label x:Name="Label1"  Content="" HorizontalAlignment="Left" Margin="211,172,0,0" VerticalAlignment="Top" FontSize="28"/>
-        <Label x:Name="Label2" Content="" HorizontalAlignment="Left" Margin="211,247,0,0" VerticalAlignment="Top" FontSize="28"/>
-        <Label x:Name="Label3" Content="" HorizontalAlignment="Left" Margin="211,313,0,0" VerticalAlignment="Top" FontSize="28"/>
-
     </Grid>
 </Page>

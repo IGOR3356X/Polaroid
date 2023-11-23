@@ -23,35 +23,35 @@
                 HorizontalAlignment="Left"/>
         </DockPanel>
         <DockPanel VerticalAlignment="Center" HorizontalAlignment="Right">
-            <Button Name="Btn_Exit" Content="Вернуться" Click="Btn_Exit_Click" Margin="10 0 20 0" Height="28" Width="75"/> 
+            <Button Name="Btn_Exit" Content="Вернуться" Click="Btn_Exit_Click" Margin="10 0 20 0" Height="28" Width="75"/>
         </DockPanel>
-
         <DockPanel Grid.Row="1">
             <DataGrid 
                 Name="DgProducts"
-                IsReadOnly="True"
                 AutoGenerateColumns="False"
                 RowBackground="LightBlue"
                 AlternatingRowBackground="White"
-                HorizontalScrollBarVisibility="Disabled" Height="484" SelectedIndex="2"
+                HorizontalScrollBarVisibility="Disabled" Height="617" SelectedIndex="2"
                 >
                 <DataGrid.Columns>
-                    <DataGridTextColumn Header="IDItem" Width="*" Binding="{Binding IDItem}"/>
+                    <DataGridTextColumn Header="ItemName" Width="*" Binding="{Binding IDItem}"/>
                     <DataGridTextColumn Header="ItemName" Width="*" Binding="{Binding ItemName}"/>
                     <DataGridTextColumn Header="Price" Width="*" Binding="{Binding Price}"/>
                     <DataGridTextColumn Header="Discription" Width="*" Binding="{Binding Discription}"/>
-                    <DataGridTextColumn Header="Category" Width="*" Binding="{Binding Category}"/>
-                    <DataGridTemplateColumn>
+                    <DataGridTextColumn Header="CategoryID" Width="*" Binding="{Binding CategoryID}"/>
+                    <DataGridTextColumn Header="ShopID" Width="*" Binding="{Binding ShopID}"/>
+                    <DataGridTemplateColumn Header="2 Кнопки" Width="200">
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
-                                <Button Name="Delete_Btn" Content="Удалить" Click="Delete_Btn_Click"/>
+                                <StackPanel>
+                                    <Button Name="Delete_Btn_Click" Click="Delete_Btn_Click" Content="Удалить"/>
+                                    <Button Name="Edit_Btn" Content="Изменить"/>
+                                </StackPanel>
                             </DataTemplate>
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>
                 </DataGrid.Columns>
             </DataGrid>
         </DockPanel>
-        <Label x:Name="Lablel1" Content="" HorizontalAlignment="Left" Margin="160,615,0,0" Grid.Row="1" VerticalAlignment="Top"/>
-        <Label x:Name="Lablel2" Content="" HorizontalAlignment="Left" Margin="222,615,0,0" Grid.Row="1" VerticalAlignment="Top"/>
     </Grid>
 </Page>
