@@ -36,7 +36,7 @@ namespace Polaroid.Pages.GlavPage
             Navigating.nav.Navigate(new SUSPage());
         }
 
-        private const string connectionString = "Data Source=DESKTOP-CCP78NP\\SQLEXPRESS;Initial Catalog=Polaroid;Integrated Security=True"; // Заменить на свою строку подключения
+        private const string connectionString = "Data Source=V-MGOK-201-27N\\SQLEXPRESS;Initial Catalog=Polaroid;Integrated Security=True"; // Заменить на свою строку подключения
         private void LoadDataFromDatabase()
         {
             try

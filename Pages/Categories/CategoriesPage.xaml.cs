@@ -21,7 +21,7 @@ namespace Polaroid.Pages.Categories
             Navigating.nav.GoBack();
         }
 
-        private const string connectionString = "Data Source=DESKTOP-CCP78NP\\SQLEXPRESS;Initial Catalog=Polaroid;Integrated Security=True"; // Заменить на свою строку подключения
+        private const string connectionString = "Data Source=V-MGOK-201-27N\\SQLEXPRESS;Initial Catalog=Polaroid;Integrated Security=True"; // Заменить на свою строку подключения
         private void Filter_Btn_Click(object sender, RoutedEventArgs e)
         {
             if (Camera.IsChecked ?? false)

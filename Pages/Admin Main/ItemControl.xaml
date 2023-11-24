@@ -45,7 +45,7 @@
                             <DataTemplate>
                                 <StackPanel>
                                     <Button Name="Delete_Btn_Click" Click="Delete_Btn_Click" Content="Удалить"/>
-                                    <Button Name="Edit_Btn" Content="Изменить"/>
+                                    <Button Name="Edit_Btn" Content="Изменить" Click="Edit_Btn_Click"/>
                                 </StackPanel>
                             </DataTemplate>
                         </DataGridTemplateColumn.CellTemplate>

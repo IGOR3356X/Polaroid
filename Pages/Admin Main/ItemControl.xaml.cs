@@ -3,6 +3,7 @@ using Polaroid.DataBase;
 using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Documents;
 
 namespace Polaroid.Pages.Admin_Main
 {
@@ -41,6 +42,13 @@ namespace Polaroid.Pages.Admin_Main
 
             MessageBox.Show("Запись удалена");
 
+            LoadDataItems();
+        }
+
+        private void Edit_Btn_Click(object sender, RoutedEventArgs e)
+        {
+            DgProducts.ItemsSource=Connect.connect.Items.ToList();
+            Connect.connect.SaveChanges();
             LoadDataItems();
         }
     }
