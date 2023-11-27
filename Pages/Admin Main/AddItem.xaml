@@ -9,10 +9,18 @@
       Title="AddItem" Background="White">
 
     <Grid>
-        <TextBox HorizontalAlignment="Left" Margin="403,196,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="403" Height="30"/>
-        <TextBox HorizontalAlignment="Left" Margin="403,263,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="403" Height="31"/>
-        <TextBox HorizontalAlignment="Left" Margin="403,336,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="403" Height="30"/>
-        <TextBox HorizontalAlignment="Left" Margin="403,407,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="403" Height="30"/>
-        <TextBox HorizontalAlignment="Left" Margin="403,481,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="403" Height="30"/>
+        <TextBox Name="TxbItemName" HorizontalAlignment="Left" Margin="473,282,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="404" Height="30" FontSize="16" FontFamily="Arial"/>
+        <TextBox Name="TxbPrice" HorizontalAlignment="Left" Margin="473,350,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="404" Height="30" FontSize="16" FontFamily="Arial"/>
+        <TextBox Name="TxbDiscription" HorizontalAlignment="Left" Margin="473,422,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="404" Height="30" FontSize="16" FontFamily="Arial"/>
+        <TextBox Name="TxbCategoryID" HorizontalAlignment="Left" Margin="473,494,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="404" Height="30" FontSize="16" FontFamily="Arial"/>
+        <TextBox Name="TxbShopID" HorizontalAlignment="Left" Margin="473,568,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="404" Height="30" FontSize="16" FontFamily="Arial"/>
+        <Label Content="Добавить товар" HorizontalAlignment="Center" Margin="0,190,0,0" VerticalAlignment="Top" FontSize="48" FontFamily="Arial" FontWeight="Bold"/>
+        <Label Content="ItemName" HorizontalAlignment="Left" Margin="393,282,0,0" VerticalAlignment="Top"/>
+        <Label Content="Price" HorizontalAlignment="Left" Margin="415,352,0,0" VerticalAlignment="Top"/>
+        <Label Content="Discription" HorizontalAlignment="Left" Margin="390,426,0,0" VerticalAlignment="Top"/>
+        <Label Content="CategoryID" HorizontalAlignment="Left" Margin="387,496,0,0" VerticalAlignment="Top"/>
+        <Label Content="ShopID" HorizontalAlignment="Left" Margin="408,570,0,0" VerticalAlignment="Top"/>
+        <Button Content="Добавить товар" HorizontalAlignment="Center" Margin="0,610,0,0" VerticalAlignment="Top" Height="56" Width="210" Click="Button_Click"/>
+        <Button Name="Back_Btn" Content="Назад" HorizontalAlignment="Left" Margin="38,30,0,0" VerticalAlignment="Top" Height="82" Width="142" Click="Back_Btn_Click"/>
     </Grid>
 </Page>

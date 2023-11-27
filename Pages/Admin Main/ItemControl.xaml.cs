@@ -47,9 +47,14 @@ namespace Polaroid.Pages.Admin_Main
 
         private void Edit_Btn_Click(object sender, RoutedEventArgs e)
         {
-            DgProducts.ItemsSource=Connect.connect.Items.ToList();
+            DgProducts.ItemsSource = Connect.connect.Items.ToList();
             Connect.connect.SaveChanges();
+            MessageBox.Show("Запись изменена");
             LoadDataItems();
+        }
+
+        private void Add_Btn_Click(object sender, RoutedEventArgs e)
+        {
         }
     }
 }

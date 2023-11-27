@@ -7,32 +7,20 @@
       xmlns:SqlServer="clr-namespace:System.Data.Entity.SqlServer;assembly=EntityFramework.SqlServer" x:Class="Polaroid.Pages.RegisterFolder.RegisterPage"
       mc:Ignorable="d" 
       d:DesignHeight="720" d:DesignWidth="1280"
-      Title="RegisterPage" Background="MediumAquamarine">
+      Title="RegisterPage" Background="White">
 
     <Grid>
-        <Image HorizontalAlignment="Center" Height="110" Margin="0,10,0,0" VerticalAlignment="Top" Width="194" Source="/i.png">
-            <Image.OpacityMask>
-                <ImageBrush ImageSource="/i.png"/>
-            </Image.OpacityMask>
-        </Image>
-        <Button Name="Manin_Btn" Content="Главная" HorizontalAlignment="Left" Margin="216,130,0,0" VerticalAlignment="Top" Height="35" Width="190" FontFamily="Arial" Click="Manin_Btn_Click"/>
-        <Button Name="Category_Btn" Content="Категории" HorizontalAlignment="Left" Margin="434,130,0,0" VerticalAlignment="Top" Height="36" Width="190" FontFamily="Arial" Click="Category_Btn_Click"/>
-        <Button Name ="Authorization_Btn" Content="Авторизация" HorizontalAlignment="Left" Margin="643,130,0,0" VerticalAlignment="Top" Height="36" Width="190" FontFamily="Arial" Click="Authorization_Btn_Click"/>
-        <Button Name="Info_Btn" Content="Об Организации" HorizontalAlignment="Left" Margin="866,130,0,0" VerticalAlignment="Top" Height="36" Width="190" FontFamily="Arial" Click="Info_Btn_Click"/>
         <Label Content="Регистрация" HorizontalAlignment="Center" Margin="0,196,0,0" VerticalAlignment="Top" FontSize="48" FontFamily="Arial"/>
-        <TextBox Name="TxbName" HorizontalAlignment="Left" Margin="181,318,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="378" Height="73"/>
-        <TextBox Name ="TxbSurname" HorizontalAlignment="Left" Margin="181,463,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="378" Height="73"/>
-        <TextBox Name ="TxbLogin" HorizontalAlignment="Left" Margin="738,318,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="378" Height="72"/>
-        <TextBox Name="TxbPassword" HorizontalAlignment="Left" Margin="738,463,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="378" Height="73"/>
+        <TextBox Name="TxbName" HorizontalAlignment="Left" Margin="181,318,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="378" Height="73" BorderThickness="2,2,2,2"/>
+        <TextBox Name ="TxbSurname" HorizontalAlignment="Left" Margin="181,463,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="378" Height="73" BorderThickness="2,2,2,2"/>
+        <TextBox Name ="TxbLogin" HorizontalAlignment="Left" Margin="738,318,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="378" Height="72" BorderThickness="2,2,2,2"/>
+        <TextBox Name="TxbPassword" HorizontalAlignment="Left" Margin="738,463,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="378" Height="73" BorderThickness="2,2,2,2"/>
         <TextBox Name="TxbRole" HorizontalAlignment="Left" Margin="1147,220,0,0" Text="2" VerticalAlignment="Top" Width="81" Visibility="Hidden"/>
         <Label Content="Имя" HorizontalAlignment="Left" Margin="181,271,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="28"/>
         <Label Content="Фамилия" HorizontalAlignment="Left" Margin="181,421,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="28"/>
         <Label Content="Пароль" HorizontalAlignment="Left" Margin="738,421,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="28"/>
         <Label Content="Логин" HorizontalAlignment="Left" Margin="738,271,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="28" RenderTransformOrigin="0.399,0.142"/>
-        <Button Name ="Register_Btn" HorizontalAlignment="Left" Margin="495,594,0,0" VerticalAlignment="Top" Height="71" Width="316" Click="Register_Btn_Click">
-            <Button.Background>
-                <ImageBrush ImageSource="/Pages/Register/Превью.jpg"/>
-            </Button.Background>
+        <Button Name ="Register_Btn" Content="Зарегестрироваться" HorizontalAlignment="Left" Margin="495,594,0,0" VerticalAlignment="Top" Height="71" Width="316" Click="Register_Btn_Click" FontSize="30" FontFamily="Arial">
         </Button>
 
     </Grid>

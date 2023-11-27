@@ -1,5 +1,9 @@
 ﻿using Polaroid.ContentObjects;
 using Polaroid.DataBase;
+using Polaroid.Pages.About_Us;
+using Polaroid.Pages.AUZ;
+using Polaroid.Pages.Categories;
+using Polaroid.Pages.GlavPage;
 using System.Windows;
 using System.Windows.Controls;
 
@@ -22,22 +26,22 @@ namespace Polaroid.Pages.RegisterFolder
 
         private void Manin_Btn_Click(object sender, RoutedEventArgs e)
         {
-
-        }
-
-        private void Category_Btn_Click(object sender, RoutedEventArgs e)
-        {
-
+            Navigating.nav.Navigate(new Glavnaya());
         }
 
         private void Authorization_Btn_Click(object sender, RoutedEventArgs e)
         {
+            Navigating.nav.Navigate(new AUZPage());
+        }
 
+        private void Category_Btn_Click(object sender, RoutedEventArgs e)
+        {
+            Navigating.nav.Navigate(new CategoriesPage());
         }
 
         private void Info_Btn_Click(object sender, RoutedEventArgs e)
         {
-
+            Navigating.nav.Navigate(new SUSPage());
         }
 
         private void Register_Btn_Click(object sender, RoutedEventArgs e)

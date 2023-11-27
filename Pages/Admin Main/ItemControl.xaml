@@ -10,11 +10,12 @@
 
     <Grid>
         <Grid.RowDefinitions>
+            <RowDefinition Height="4*"/>
             <RowDefinition Height="1*"/>
             <RowDefinition Height="10*"/>
         </Grid.RowDefinitions>
-        <DockPanel>
-            <Label Grid.RowSpan="2" VerticalAlignment="Center" FontSize="18">Admin</Label>
+        <DockPanel Grid.Row="1">
+            <Label Grid.RowSpan="1" VerticalAlignment="Center" FontSize="18">Admin</Label>
             <Button 
                 Name="AddItem_Btn"
                 Content="Добавить товар"
@@ -22,19 +23,19 @@
                 VerticalAlignment="Center"
                 HorizontalAlignment="Left"/>
         </DockPanel>
-        <DockPanel VerticalAlignment="Center" HorizontalAlignment="Right">
+        <DockPanel Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Right">
             <Button Name="Btn_Exit" Content="Вернуться" Click="Btn_Exit_Click" Margin="10 0 20 0" Height="28" Width="75"/>
         </DockPanel>
-        <DockPanel Grid.Row="1">
+        <DockPanel Grid.Row="10">
             <DataGrid 
                 Name="DgProducts"
                 AutoGenerateColumns="False"
                 RowBackground="LightBlue"
                 AlternatingRowBackground="White"
-                HorizontalScrollBarVisibility="Disabled" Height="617" SelectedIndex="2"
+                HorizontalScrollBarVisibility="Disabled" Height="466" SelectedIndex="2" ScrollViewer.CanContentScroll="True" VerticalScrollBarVisibility="Visible"
                 >
                 <DataGrid.Columns>
-                    <DataGridTextColumn Header="ItemName" Width="*" Binding="{Binding IDItem}"/>
+                    <DataGridTextColumn Header="IDItem" Width="*" Binding="{Binding IDItem}"/>
                     <DataGridTextColumn Header="ItemName" Width="*" Binding="{Binding ItemName}"/>
                     <DataGridTextColumn Header="Price" Width="*" Binding="{Binding Price}"/>
                     <DataGridTextColumn Header="Discription" Width="*" Binding="{Binding Discription}"/>
@@ -45,7 +46,7 @@
                             <DataTemplate>
                                 <StackPanel>
                                     <Button Name="Delete_Btn_Click" Click="Delete_Btn_Click" Content="Удалить"/>
-                                    <Button Name="Edit_Btn" Content="Изменить" Click="Edit_Btn_Click"/>
+                                    <Button Name="Edit_Btn" Click="Edit_Btn_Click" Content="Изменить"/>
                                 </StackPanel>
                             </DataTemplate>
                         </DataGridTemplateColumn.CellTemplate>

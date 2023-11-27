@@ -6,18 +6,9 @@
       xmlns:local="clr-namespace:Polaroid.Pages.About_Us"
       mc:Ignorable="d" 
       d:DesignHeight="720" d:DesignWidth="1280"
-      Title="SUSPage" Background="AntiqueWhite">
+      Title="SUSPage" Background="White">
 
     <Grid>
-        <Button Name="Manin_Btn" Content="Главная" HorizontalAlignment="Left" Margin="215,152,0,0" VerticalAlignment="Top" Height="35" Width="190" FontFamily="Arial" Click="Manin_Btn_Click"/>
-        <Button Name="Category_Btn" Content="Категории" HorizontalAlignment="Left" Margin="433,152,0,0" VerticalAlignment="Top" Height="36" Width="190" FontFamily="Arial" Click="Category_Btn_Click"/>
-        <Button Name ="Authorization_Btn" Content="Авторизация" HorizontalAlignment="Left" Margin="642,152,0,0" VerticalAlignment="Top" Height="36" Width="190" FontFamily="Arial" Click="Authorization_Btn_Click"/>
-        <Button Name="Info_Btn" Content="Об Организации" HorizontalAlignment="Left" Margin="865,152,0,0" VerticalAlignment="Top" Height="36" Width="190" FontFamily="Arial"/>
-        <Image HorizontalAlignment="Center" Height="117" Margin="0,10,0,0" VerticalAlignment="Top" Width="194" Source="/i.png">
-            <Image.OpacityMask>
-                <ImageBrush ImageSource="/i.png"/>
-            </Image.OpacityMask>
-        </Image>
         <Label Content=" О нас:" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,233,0,0" FontSize="24" FontFamily="Arial"/>
         <Label Content="Привет! Мы Polaroid - ведущая компания по производству фототехники и бытовой электроники. &#xD;&#xA;Наша миссия - сохранить важные моменты жизни и помочь клиентамделиться ими. У нас широкий &#xD;&#xA;выбор фотокамер и аксессуаров, а также бытовая электроника. Мы постоянноразвиваемся и предлагаем &#xD;&#xA;передовые инновации, гарантируя качество и надежность. Мы всегда готовы поддержать своих клиентов &#xD;&#xA;и превзойти их ожидания. Давайте вместе ощутим волшебство фотографии с Polaroid!" 
                HorizontalAlignment="Center"

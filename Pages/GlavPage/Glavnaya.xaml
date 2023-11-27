@@ -9,31 +9,38 @@
       Title="Main" Background="White" >
 
     <Grid>
-        <Button Name="Manin_Btn" Content="Главная" HorizontalAlignment="Left" Margin="215,148,0,0" VerticalAlignment="Top" Height="35" Width="190" FontFamily="Arial"/>
-        <Button Name="Category_Btn" Content="Поиск" HorizontalAlignment="Left" Margin="433,148,0,0" VerticalAlignment="Top" Height="36" Width="190" FontFamily="Arial" Click="Category_Btn_Click"/>
-        <Button Name ="Authorization_Btn" Content="Авторизация" HorizontalAlignment="Left" Margin="642,148,0,0" VerticalAlignment="Top" Height="36" Width="190" FontFamily="Arial" Click="Authorization_Btn_Click"/>
-        <Button Name="Info_Btn" Content="Об Организации" HorizontalAlignment="Left" Margin="865,148,0,0" VerticalAlignment="Top" Height="36" Width="190" FontFamily="Arial" Click="Info_Btn_Click"/>
-        <Image HorizontalAlignment="Center" Height="117" Margin="0,10,0,0" VerticalAlignment="Top" Width="194" Source="/i.png">
-            <Image.OpacityMask>
-                <ImageBrush ImageSource="/i.png"/>
-            </Image.OpacityMask>
-        </Image>
-        <Rectangle x:Name="ads" HorizontalAlignment="Center" Height="188" Stroke="Black" VerticalAlignment="Top" Width="940" Margin="0,208,0,0">
+        <Rectangle x:Name="ads" HorizontalAlignment="Left" Height="188" Stroke="Black" VerticalAlignment="Top" Width="940" Margin="168,193,0,0">
             <Rectangle.Fill>
                 <ImageBrush ImageSource="/ADS.png" Stretch="UniformToFill"/>
             </Rectangle.Fill>
         </Rectangle>
-        <Rectangle HorizontalAlignment="Left" Height="188" Margin="223,428,0,0" Stroke="Black" VerticalAlignment="Top" Width="192"/>
-        <Rectangle HorizontalAlignment="Left" Height="188" Margin="436,428,0,0" Stroke="Black" VerticalAlignment="Top" Width="192"/>
-        <Rectangle HorizontalAlignment="Left" Height="188" Margin="649,428,0,0" Stroke="Black" VerticalAlignment="Top" Width="192"/>
-        <Rectangle HorizontalAlignment="Left" Height="188" Margin="865,428,0,0" Stroke="Black" VerticalAlignment="Top" Width="192"/>
-        <TextBlock x:Name="texblock1" HorizontalAlignment="Left" Margin="223,621,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="133" Height="53"/>
-        <TextBlock x:Name="texblock2" HorizontalAlignment="Left" Margin="436,621,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="133" Height="53"/>
-        <TextBlock x:Name="texblock3" HorizontalAlignment="Left" Margin="649,621,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="133" Height="53"/>
-        <TextBlock x:Name="texblock4" HorizontalAlignment="Left" Margin="865,621,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="133" Height="53"/>
-        <TextBlock x:Name="textobloko1" HorizontalAlignment="Left" Margin="361,629,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="54"/>
-        <TextBlock x:Name="textobloko2" HorizontalAlignment="Left" Margin="574,629,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="54"/>
-        <TextBlock x:Name="textobloko3" HorizontalAlignment="Left" Margin="787,629,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="54"/>
-        <TextBlock x:Name="textobloko4" HorizontalAlignment="Left" Margin="1003,629,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="54" RenderTransformOrigin="0.481,0.815"/>
+        <Rectangle HorizontalAlignment="Left" Height="188" Margin="222,413,0,0" Stroke="Black" VerticalAlignment="Top" Width="192">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="/Pages/GlavPage/PhotoCamera.jpg"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="188" Margin="434,413,0,0" Stroke="Black" VerticalAlignment="Top" Width="192">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="/Pages/GlavPage/EchonCamera.jpg"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="188" Margin="648,413,0,0" Stroke="Black" VerticalAlignment="Top" Width="192">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="/Pages/GlavPage/PhotoPaper.jpg"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="188" Margin="864,413,0,0" Stroke="Black" VerticalAlignment="Top" Width="192">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="/Pages/GlavPage/PocketPrinter.jpg"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <TextBlock x:Name="texblock1" HorizontalAlignment="Left" Margin="222,606,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="132" Height="53" FontSize="16" FontFamily="Arial"/>
+        <TextBlock x:Name="texblock2" HorizontalAlignment="Left" Margin="434,606,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="134" Height="53" FontSize="16" FontFamily="Arial"/>
+        <TextBlock x:Name="texblock3" HorizontalAlignment="Left" Margin="648,606,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="132" Height="53" FontSize="16" FontFamily="Arial"/>
+        <TextBlock x:Name="texblock4" HorizontalAlignment="Left" Margin="864,606,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="132" Height="53" FontSize="16" FontFamily="Arial"/>
+        <TextBlock x:Name="textobloko1" HorizontalAlignment="Left" Margin="360,614,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="54" FontSize="16" FontFamily="Arial"/>
+        <TextBlock x:Name="textobloko2" HorizontalAlignment="Left" Margin="572,614,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="54" FontSize="16" FontFamily="Arial"/>
+        <TextBlock x:Name="textobloko3" HorizontalAlignment="Left" Margin="786,614,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="54" FontSize="16" FontFamily="Arial"/>
+        <TextBlock x:Name="textobloko4" HorizontalAlignment="Left" Margin="1002,614,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="54" RenderTransformOrigin="0.481,0.815" FontSize="16" FontFamily="Arial"/>
     </Grid>
 </Page>
