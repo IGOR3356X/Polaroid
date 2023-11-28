@@ -30,7 +30,7 @@
             <DataGrid 
                 Name="DgProducts"
                 AutoGenerateColumns="False"
-                RowBackground="LightBlue"
+                RowBackground="White"
                 AlternatingRowBackground="White"
                 HorizontalScrollBarVisibility="Disabled" Height="466" SelectedIndex="2" ScrollViewer.CanContentScroll="True" VerticalScrollBarVisibility="Visible"
                 >

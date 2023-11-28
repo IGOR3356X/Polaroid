@@ -42,5 +42,6 @@
         <TextBlock x:Name="textobloko2" HorizontalAlignment="Left" Margin="572,614,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="54" FontSize="16" FontFamily="Arial"/>
         <TextBlock x:Name="textobloko3" HorizontalAlignment="Left" Margin="786,614,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="54" FontSize="16" FontFamily="Arial"/>
         <TextBlock x:Name="textobloko4" HorizontalAlignment="Left" Margin="1002,614,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="54" RenderTransformOrigin="0.481,0.815" FontSize="16" FontFamily="Arial"/>
+        <Button Name ="Btn_Tovar" Content="Button" HorizontalAlignment="Left" Margin="222,413,0,0" VerticalAlignment="Top" Height="188" Width="192" Click="Btn_Tovar_Click" Opacity="0"/>
     </Grid>
 </Page>

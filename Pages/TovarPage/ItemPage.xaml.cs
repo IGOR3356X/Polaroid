@@ -1,43 +1,37 @@
-﻿using Polaroid.ContentObjects;
-using Polaroid.Pages.About_Us;
-using Polaroid.Pages.AUZ;
-using Polaroid.Pages.Categories;
-using Polaroid.Pages.TovarPage;
-using System;
+﻿using System;
+using System.Collections.Generic;
 using System.Data.SqlClient;
+using System.Linq;
+using System.Reflection;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
+using System.Windows.Shapes;
 
-namespace Polaroid.Pages.GlavPage
+namespace Polaroid.Pages.TovarPage
 {
     /// <summary>
-    /// Логика взаимодействия для Main.xaml
+    /// Логика взаимодействия для ItemPage.xaml
     /// </summary>
-    public partial class Glavnaya : Page
+    public partial class ItemPage : Page
     {
-        public Glavnaya()
+        public ItemPage()
         {
             InitializeComponent();
             LoadDataFromDatabase();
             LoadPriseFromDatabase();
-        }
+            LoadDiscriptionFromDatabase();
 
-        private void Authorization_Btn_Click(object sender, RoutedEventArgs e)
-        {
-            Navigating.nav.Navigate(new AUZPage());
         }
-
-        private void Category_Btn_Click(object sender, RoutedEventArgs e)
-        {
-            Navigating.nav.Navigate(new CategoriesPage());
-        }
-
-        private void Info_Btn_Click(object sender, RoutedEventArgs e)
-        {
-            Navigating.nav.Navigate(new SUSPage());
-        }
-
         private const string connectionString = "Data Source=DESKTOP-CCP78NP\\SQLEXPRESS;Initial Catalog=Polaroid;Integrated Security=True"; // Заменить на свою строку подключения
+        
         private void LoadDataFromDatabase()
         {
             try
@@ -54,12 +48,48 @@ namespace Polaroid.Pages.GlavPage
                     int index = 0;
                     while (reader.Read())
                     {
-                        string itemName = reader.GetString(0);
+                        string ItemName = reader.GetString(0);
 
                         // Получение соответствующего textblock-элемента по имени
-                        if (FindName("texblock" + (index + 1)) is TextBlock textBlock)
+                        if (FindName("TxbName" + (index + 1)) is TextBlock textBlock)
                         {
-                            textBlock.Text = itemName; // Заполнение содержимого textblock-элемента
+                            textBlock.Text = ItemName; // Заполнение содержимого textblock-элемента
+                            index++;
+                        }
+                    }
+
+
+                    reader.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
+
+        }
+        private void LoadPriseFromDatabase()
+        {
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+
+                    string query = "SELECT Discription FROM Items";
+                    SqlCommand command = new SqlCommand(query, connection);
+
+                    SqlDataReader reader = command.ExecuteReader();
+
+                    int index = 0;
+                    while (reader.Read())
+                    {
+                        string ItemName = reader.GetString(0);
+
+                        // Получение соответствующего textblock-элемента по имени
+                        if (FindName("TxbDiscription" + (index + 1)) is TextBlock textBlock)
+                        {
+                            textBlock.Text = ItemName; // Заполнение содержимого textblock-элемента
                             index++;
                         }
                     }
@@ -73,7 +103,7 @@ namespace Polaroid.Pages.GlavPage
             }
         }
 
-        private void LoadPriseFromDatabase()
+        private void LoadDiscriptionFromDatabase()
         {
             try
             {
@@ -92,9 +122,9 @@ namespace Polaroid.Pages.GlavPage
                         decimal Prise = reader.GetDecimal(0);
 
                         // Получение соответствующего textblock-элемента по имени
-                        if (FindName("textobloko" + (index + 1)) is TextBlock textBlock)
+                        if (FindName("TxbPrice" + (index + 1)) is TextBlock textBlock)
                         {
-                            textBlock.Text = Prise.ToString() + '₽'; // Заполнение содержимого textblock-элемента
+                            textBlock.Text = "Цена " + Prise.ToString() + '₽'; // Заполнение содержимого textblock-элемента
                             index++;
                         }
                     }
@@ -107,10 +137,9 @@ namespace Polaroid.Pages.GlavPage
                 MessageBox.Show("Error: " + ex.Message);
             }
         }
-
-        private void Btn_Tovar_Click(object sender, RoutedEventArgs e)
+        private void Btn_Buy_Click(object sender, RoutedEventArgs e)
         {
-            Navigating.nav.Navigate(new ItemPage());
+
         }
     }
 }

@@ -98,6 +98,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\Admin Main\Otchot.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\AUZ\AUZPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -169,6 +173,9 @@
     <Compile Include="Pages\Admin Main\UserControl.xaml.cs">
       <DependentUpon>UserControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Admin Main\Otchot.xaml.cs">
+      <DependentUpon>Otchot.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\AUZ\AUZPage.xaml.cs">
       <DependentUpon>AUZPage.xaml</DependentUpon>
     </Compile>
@@ -185,8 +192,15 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Pages\TovarPage\ItemPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Pages\TovarPage\ItemPage.xaml.cs">
+      <DependentUpon>ItemPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -241,6 +255,7 @@
       <DependentUpon>BD.edmx</DependentUpon>
       <LastGenOutput>BD.cs</LastGenOutput>
     </Content>
+    <Resource Include="Pages\TovarPage\PhotoCamera.jpg" />
     <Resource Include="Pages\GlavPage\PocketPrinter.jpg" />
     <Resource Include="Pages\GlavPage\PhotoPaper.jpg" />
     <Resource Include="Pages\GlavPage\EchonCamera.jpg" />
