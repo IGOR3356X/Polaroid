@@ -10,18 +10,26 @@
 
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="4*"/>
             <RowDefinition Height="1*"/>
             <RowDefinition Height="10*"/>
         </Grid.RowDefinitions>
-        <DockPanel Grid.Row="1">
+        <DockPanel Grid.Row="0">
             <Label Grid.RowSpan="1" VerticalAlignment="Center" FontSize="18">Admin</Label>
             <Button 
                 Name="AddItem_Btn"
                 Content="Добавить товар"
                 Click="AddItem_Btn_Click"
                 VerticalAlignment="Center"
-                HorizontalAlignment="Left"/>
+                HorizontalAlignment="Left"
+                />
+            <Button 
+                Name="Btn_exit"
+                Content="Назад"
+                Width="129" Height="29"
+                Click="Btn_Exit_Click"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Right"
+                Margin="0,0,10,0"/>
         </DockPanel>
         <DockPanel Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Right">
             <Button Name="Btn_Exit" Content="Вернуться" Click="Btn_Exit_Click" Margin="10 0 20 0" Height="28" Width="75"/>
@@ -32,21 +40,21 @@
                 AutoGenerateColumns="False"
                 RowBackground="White"
                 AlternatingRowBackground="White"
-                HorizontalScrollBarVisibility="Disabled" Height="466" SelectedIndex="2" ScrollViewer.CanContentScroll="True" VerticalScrollBarVisibility="Visible"
+                HorizontalScrollBarVisibility="Disabled" Height="650" SelectedIndex="2" ScrollViewer.CanContentScroll="True" VerticalScrollBarVisibility="Visible"
                 >
                 <DataGrid.Columns>
-                    <DataGridTextColumn Header="IDItem" Width="*" Binding="{Binding IDItem}"/>
-                    <DataGridTextColumn Header="ItemName" Width="*" Binding="{Binding ItemName}"/>
-                    <DataGridTextColumn Header="Price" Width="*" Binding="{Binding Price}"/>
-                    <DataGridTextColumn Header="Discription" Width="*" Binding="{Binding Discription}"/>
-                    <DataGridTextColumn Header="CategoryID" Width="*" Binding="{Binding CategoryID}"/>
-                    <DataGridTextColumn Header="ShopID" Width="*" Binding="{Binding ShopID}"/>
-                    <DataGridTemplateColumn Header="2 Кнопки" Width="200">
+                    <DataGridTextColumn Header="ИдТовра" Width="*" Binding="{Binding IDItem}"/>
+                    <DataGridTextColumn Header="ИмяТовара" Width="*" Binding="{Binding ItemName}"/>
+                    <DataGridTextColumn Header="Цена" Width="*" Binding="{Binding Price}"/>
+                    <DataGridTextColumn Header="Описание" Width="*" Binding="{Binding Discription}"/>
+                    <DataGridTextColumn Header="ИД Категории" Width="*" Binding="{Binding CategoryID}"/>
+                    <DataGridTextColumn Header="ИД Магазина" Width="*" Binding="{Binding ShopID}"/>
+                    <DataGridTemplateColumn Header="Удалить/Изменить" Width="200">
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
-                                <StackPanel>
+                                <StackPanel Orientation="Horizontal">
                                     <Button Name="Delete_Btn_Click" Click="Delete_Btn_Click" Content="Удалить"/>
-                                    <Button Name="Edit_Btn" Click="Edit_Btn_Click" Content="Изменить"/>
+                                    <Button Name="Edit_Btn" Margin="5,0,0,0" Click="Edit_Btn_Click" Content="Изменить"/>
                                 </StackPanel>
                             </DataTemplate>
                         </DataGridTemplateColumn.CellTemplate>

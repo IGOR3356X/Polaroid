@@ -9,6 +9,15 @@
       Title="ItemPage" Background="White">
 
     <Grid>
+        <Button Name="Manin_Btn" Content="Главная" HorizontalAlignment="Left" Margin="217,123,0,0" VerticalAlignment="Top" Height="35" Width="190" FontFamily="Arial" Padding="0,0,0,0" Click="Manin_Btn_Click" BorderBrush="White"/>
+        <Button Name="Category_Btn" Content="Поиск" HorizontalAlignment="Left" Margin="435,123,0,0" VerticalAlignment="Top" Height="36" Width="190" FontFamily="Arial" Click="Category_Btn_Click" BorderBrush="White"/>
+        <Button Name ="Authorization_Btn" Content="Авторизация" HorizontalAlignment="Left" Margin="644,123,0,0" VerticalAlignment="Top" Height="36" Width="190" FontFamily="Arial" Click="Authorization_Btn_Click" BorderBrush="#FFFFFCFC"/>
+        <Button Name="Info_Btn" Content="Об Организации" HorizontalAlignment="Left" Margin="867,123,0,0" VerticalAlignment="Top" Height="36" Width="190" FontFamily="Arial" Click="Info_Btn_Click" BorderBrush="#FFFFFCFC"/>
+        <Image HorizontalAlignment="Center" Height="117" Margin="0,10,0,0" VerticalAlignment="Top" Width="194" Source="/i.png">
+            <Image.OpacityMask>
+                <ImageBrush ImageSource="/i.png"/>
+            </Image.OpacityMask>
+        </Image>
         <Rectangle HorizontalAlignment="Left" Height="390" Margin="86,274,0,0" Stroke="Black" VerticalAlignment="Top" Width="410">
             <Rectangle.Fill>
                 <ImageBrush ImageSource="/Pages/TovarPage/PhotoCamera.jpg"/>

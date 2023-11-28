@@ -1,8 +1,10 @@
 ﻿using Polaroid.ContentObjects;
 using Polaroid.DataBase;
+using Polaroid.Pages.GlavPage;
 using System;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Markup;
 
 namespace Polaroid.Pages.Admin_Main
 {
@@ -19,15 +21,25 @@ namespace Polaroid.Pages.Admin_Main
         public AddItem()
         {
             InitializeComponent();
+            Cmb_Category.ItemsSource = new CategoryID[]
+            {
+                new CategoryID {Category = "Камеры"},
+                new CategoryID {Category = "Принтеры"},
+                new CategoryID {Category = "Экшн камеры"},
+                new CategoryID {Category = "Фотоаксессуары"},
+                new CategoryID {Category = "Солнцезащитные очки"}
+            };
         }
 
         private void Button_Click(object sender, System.Windows.RoutedEventArgs e)
         {
+
             _ItemName = TxbItemName.Text;
             Decimal.TryParse(TxbPrice.Text, out _Price);
             _Discription = TxbDiscription.Text;
             int.TryParse(TxbCategoryID.Text, out _CategoryID);
             int.TryParse(TxbShopID.Text, out _ShopID);
+
 
             if (_ItemName != null && _ItemName != "")
             {
@@ -81,6 +93,34 @@ namespace Polaroid.Pages.Admin_Main
         private void Back_Btn_Click(object sender, RoutedEventArgs e)
         {
             Navigating.nav.GoBack();
+        }
+
+        public class CategoryID
+        {
+            public string Category { get; set; } = "";
+            public override string ToString() => $"{Category}";
+        }
+
+        private void Cmb_Category_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (Cmb_Category.SelectedItem is CategoryID category)
+            {
+                Testo.Text = category.Category;
+            }
+        }
+
+        private void Btn_Testos_Click(object sender, RoutedEventArgs e)
+        {
+            switch (Testo.Text)
+            {
+                case "Камеры":
+                    if (TxbShopID.Text == "1")
+                    {
+                        ID_Test.Text = "1";
+                        TxbCategoryID.Text = "1";
+                    };
+                    break;
+            }
         }
     }
 }

@@ -9,6 +9,12 @@
       Title="Main" Background="White" >
 
     <Grid>
+        <Button Name="Info_Btn" Content="Об Организации" HorizontalAlignment="Left" Margin="867,123,0,0" VerticalAlignment="Top" Height="50" Width="241" FontFamily="Arial" Click="Info_Btn_Click" BorderBrush="#FFFFFCFC"/>
+        <Image HorizontalAlignment="Center" Height="117" Margin="0,10,0,0" VerticalAlignment="Top" Width="194" Source="/i.png">
+            <Image.OpacityMask>
+                <ImageBrush ImageSource="/i.png"/>
+            </Image.OpacityMask>
+        </Image>
         <Rectangle x:Name="ads" HorizontalAlignment="Left" Height="188" Stroke="Black" VerticalAlignment="Top" Width="940" Margin="168,193,0,0">
             <Rectangle.Fill>
                 <ImageBrush ImageSource="/ADS.png" Stretch="UniformToFill"/>
@@ -43,5 +49,8 @@
         <TextBlock x:Name="textobloko3" HorizontalAlignment="Left" Margin="786,614,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="54" FontSize="16" FontFamily="Arial"/>
         <TextBlock x:Name="textobloko4" HorizontalAlignment="Left" Margin="1002,614,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="54" RenderTransformOrigin="0.481,0.815" FontSize="16" FontFamily="Arial"/>
         <Button Name ="Btn_Tovar" Content="Button" HorizontalAlignment="Left" Margin="222,413,0,0" VerticalAlignment="Top" Height="188" Width="192" Click="Btn_Tovar_Click" Opacity="0"/>
+        <TextBox HorizontalAlignment="Left" Margin="195,125,0,0" TextWrapping="Wrap" Text="Поиск" VerticalAlignment="Top" Width="629" Height="48" FontFamily="Arial" FontSize="36"/>
+        <Label Content="🔍" HorizontalAlignment="Left" Margin="776,126,0,0" VerticalAlignment="Top" FontSize="28"/>
+        <Button x:Name="Category_Btn" Content="Поиск" HorizontalAlignment="Left" Margin="197,126,0,0" VerticalAlignment="Top" Height="47" Width="627" FontFamily="Arial" Click="Category_Btn_Click" BorderBrush="White" Opacity="0"/>
     </Grid>
 </Page>

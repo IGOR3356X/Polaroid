@@ -9,25 +9,31 @@
       Title="CategoriesPage" Background="White">
 
     <Grid>
-        <Rectangle HorizontalAlignment="Left" Height="137" Margin="256,241,0,0" Stroke="Black" VerticalAlignment="Top" Width="205"/>
-        <Rectangle HorizontalAlignment="Left" Height="124" Margin="696,248,0,0" Stroke="Black" VerticalAlignment="Top" Width="288"/>
-        <Rectangle HorizontalAlignment="Left" Height="137" Margin="493,238,0,0" Stroke="Black" VerticalAlignment="Top" Width="142"/>
-        <Label Content="Поиск" HorizontalAlignment="Center" Margin="0,161,0,0" VerticalAlignment="Top" Width="116" Height="50" FontSize="36"/>
-        <Label Content="Категории" HorizontalAlignment="Left" Margin="267,243,0,0" VerticalAlignment="Top" Width="194"/>
-        <CheckBox Name="Camera" IsChecked="True" Content="Камеры" HorizontalAlignment="Left" Margin="262,274,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.672,0.331" Width="148"/>
-        <CheckBox Name ="Printers" Content="Принтеры" HorizontalAlignment="Left" Margin="262,294,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.672,0.331" Width="148"/>
-        <CheckBox Name="ActionCameras" Content="Экшн камеры" HorizontalAlignment="Left" Margin="262,314,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.672,0.331" Width="148"/>
-        <CheckBox Name="Photoacsessuars" Content="Фотоаксессуары" HorizontalAlignment="Left" Margin="262,334,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.672,0.331" Width="148"/>
-        <CheckBox Name="Sunglasses" Content="Солнцезащитные очки" HorizontalAlignment="Left" Margin="262,354,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.672,0.331" Width="148"/>
-        <Label Content="Цена" HorizontalAlignment="Left" Margin="500,248,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.061,-0.128" Width="128"/>
-        <RadioButton Name="Menshe5000" Content="&lt;5000" HorizontalAlignment="Left" Margin="506,287,0,0" VerticalAlignment="Top"/>
-        <RadioButton Name="Bolshe5000" Content=">5000" HorizontalAlignment="Left" Margin="506,324,0,0" VerticalAlignment="Top"/>
-        <Label Content="Выбери магазин" HorizontalAlignment="Left" Margin="701,248,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.29,0.385" Width="237"/>
-        <CheckBox Name="Vse" Content="Любой" HorizontalAlignment="Left" Margin="699,284,0,0" VerticalAlignment="Top"/>
-        <CheckBox Name="Moscow" Content="Москва - Варшавское ш., д. 26, строение 12" HorizontalAlignment="Left" Margin="699,304,0,0" VerticalAlignment="Top"/>
-        <CheckBox Name="StPiter" Content="Санкт-Петербург - ул. Савушкина, д. 24" HorizontalAlignment="Left" Margin="699,324,0,0" VerticalAlignment="Top"/>
-        <CheckBox Name="Ekaterina" Content="Екатеринбург - ул. Бажова, д. 89" HorizontalAlignment="Left" Margin="699,344,0,0" VerticalAlignment="Top"/>
-        <DataGrid Name="Viev" Margin="10,408,10,32"></DataGrid>
-        <Button Name="Filter_Btn" Content="Отфильтровать" HorizontalAlignment="Left" Margin="1027,269,0,0" VerticalAlignment="Top" Height="80" Width="148" Click="Filter_Btn_Click"/>
+        <Button Name="Manin_Btn" Content="Назад" HorizontalAlignment="Left" Margin="64,43,0,0" VerticalAlignment="Top" Height="35" Width="190" FontFamily="Arial" Padding="0,0,0,0" Click="Manin_Btn_Click" BorderBrush="White"/>
+        <Image HorizontalAlignment="Center" Height="117" Margin="0,10,0,0" VerticalAlignment="Top" Width="194" Source="/i.png">
+            <Image.OpacityMask>
+                <ImageBrush ImageSource="/i.png"/>
+            </Image.OpacityMask>
+        </Image>
+        <Rectangle HorizontalAlignment="Left" Height="137" Margin="248,211,0,0" Stroke="Black" VerticalAlignment="Top" Width="206"/>
+        <Rectangle HorizontalAlignment="Left" Height="124" Margin="688,218,0,0" Stroke="Black" VerticalAlignment="Top" Width="288"/>
+        <Rectangle HorizontalAlignment="Left" Height="137" Margin="486,208,0,0" Stroke="Black" VerticalAlignment="Top" Width="142"/>
+        <Label Content="Поиск" HorizontalAlignment="Left" Margin="574,131,0,0" VerticalAlignment="Top" Width="116" Height="50" FontSize="36"/>
+        <Label Content="Категории" HorizontalAlignment="Left" Margin="260,213,0,0" VerticalAlignment="Top" Width="194"/>
+        <CheckBox Name="Camera" Content="Камеры" HorizontalAlignment="Left" Margin="254,244,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.672,0.331" Width="148"/>
+        <CheckBox Name ="Printers" Content="Принтеры" HorizontalAlignment="Left" Margin="254,264,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.672,0.331" Width="148"/>
+        <CheckBox Name="ActionCameras" Content="Экшн камеры" HorizontalAlignment="Left" Margin="254,284,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.672,0.331" Width="148"/>
+        <CheckBox Name="Photoacsessuars" Content="Фотоаксессуары" HorizontalAlignment="Left" Margin="254,304,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.672,0.331" Width="148"/>
+        <CheckBox Name="Sunglasses" Content="Солнцезащитные очки" HorizontalAlignment="Left" Margin="254,324,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.672,0.331" Width="148"/>
+        <Label Content="Цена" HorizontalAlignment="Left" Margin="492,218,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.061,-0.128" Width="128"/>
+        <CheckBox Name="Menshe5000" Content="&lt;5000" HorizontalAlignment="Left" Margin="498,257,0,0" VerticalAlignment="Top"/>
+        <CheckBox Name="Bolshe5000" Content=">5000" HorizontalAlignment="Left" Margin="498,294,0,0" VerticalAlignment="Top"/>
+        <Label Content="Выбери магазин" HorizontalAlignment="Left" Margin="694,218,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.29,0.385" Width="236"/>
+        <CheckBox Name="Vse" Content="Любой" HorizontalAlignment="Left" Margin="692,254,0,0" VerticalAlignment="Top"/>
+        <CheckBox Name="Moscow" Content="Москва - Варшавское ш., д. 26, строение 12" HorizontalAlignment="Left" Margin="692,274,0,0" VerticalAlignment="Top"/>
+        <CheckBox Name="StPiter" Content="Санкт-Петербург - ул. Савушкина, д. 24" HorizontalAlignment="Left" Margin="692,294,0,0" VerticalAlignment="Top"/>
+        <CheckBox Name="Ekaterina" Content="Екатеринбург - ул. Бажова, д. 89" HorizontalAlignment="Left" Margin="692,314,0,0" VerticalAlignment="Top"/>
+        <DataGrid Name="Viev" Margin="10,360,10,32"></DataGrid>
+        <Button Name="Filter_Btn" Content="Отфильтровать" HorizontalAlignment="Left" Margin="1020,239,0,0" VerticalAlignment="Top" Height="80" Width="148" Click="Filter_Btn_Click"/>
     </Grid>
 </Page>
