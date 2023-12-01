@@ -33,6 +33,7 @@ namespace Polaroid.Pages.TovarPage
             LoadDataFromDatabase();
             LoadPriseFromDatabase();
             LoadDiscriptionFromDatabase();
+            LoadAdressFromdatabase();
 
         }
 
@@ -163,9 +164,40 @@ namespace Polaroid.Pages.TovarPage
                 MessageBox.Show("Error: " + ex.Message);
             }
         }
-        private void Btn_Buy_Click(object sender, RoutedEventArgs e)
-        {
 
+        private void LoadAdressFromdatabase()
+        {
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+
+                    string query = "Select Adress from Shops Join Items on Items.ShopID=Shops.IDShop where IDShop = 4 and IDItem = 1";
+                    SqlCommand command = new SqlCommand(query, connection);
+
+                    SqlDataReader reader = command.ExecuteReader();
+
+                    int index = 0;
+                    while (reader.Read())
+                    {
+                        string ItemName = reader.GetString(0);
+
+                        // Получение соответствующего textblock-элемента по имени
+                        if (FindName("TxbAdress" + (index + 1)) is TextBlock textBlock)
+                        {
+                            textBlock.Text = ItemName; // Заполнение содержимого textblock-элемента
+                            index++;
+                        }
+                    }
+
+                    reader.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
         }
     }
 }

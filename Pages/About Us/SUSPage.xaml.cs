@@ -17,19 +17,9 @@ namespace Polaroid.Pages.About_Us
             InitializeComponent();
         }
 
-        private void Manin_Btn_Click(object sender, RoutedEventArgs e)
+        private void Btn_Back_Click(object sender, RoutedEventArgs e)
         {
-            Navigating.nav.Navigate(new Glavnaya());
-        }
-
-        private void Category_Btn_Click(object sender, RoutedEventArgs e)
-        {
-            Navigating.nav.Navigate(new CategoriesPage());
-        }
-
-        private void Authorization_Btn_Click(object sender, RoutedEventArgs e)
-        {
-            Navigating.nav.Navigate(new AUZPage());
+            Navigating.nav.GoBack();
         }
     }
 }

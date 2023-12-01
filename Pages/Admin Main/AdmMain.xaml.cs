@@ -1,4 +1,5 @@
 ﻿using Polaroid.ContentObjects;
+using Polaroid.Pages.AUZ;
 using System.Windows;
 using System.Windows.Controls;
 
@@ -23,10 +24,9 @@ namespace Polaroid.Pages.Admin_Main
         {
             Navigating.nav.Navigate(new UserControl());
         }
-
-        private void Back_Btn_Click(object sender, RoutedEventArgs e)
+        private void Exit_Btn_Click(object sender, RoutedEventArgs e)
         {
-            Navigating.nav.GoBack();
+            Navigating.nav.Navigate(new AUZPage());
         }
     }
 }

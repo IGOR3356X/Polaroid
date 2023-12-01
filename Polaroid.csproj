@@ -152,10 +152,16 @@
     <Compile Include="DataBase\Role.cs">
       <DependentUpon>BD.tt</DependentUpon>
     </Compile>
+    <Compile Include="DataBase\Sales.cs">
+      <DependentUpon>BD.tt</DependentUpon>
+    </Compile>
     <Compile Include="DataBase\Shops.cs">
       <DependentUpon>BD.tt</DependentUpon>
     </Compile>
     <Compile Include="DataBase\SignIn.cs">
+      <DependentUpon>BD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\sysdiagrams.cs">
       <DependentUpon>BD.tt</DependentUpon>
     </Compile>
     <Compile Include="Pages\About Us\SUSPage.xaml.cs">
@@ -245,6 +251,13 @@
     <Folder Include="Images\" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Pages\TovarPage\PhotoCamera.jpg" />
+    <Resource Include="Pages\GlavPage\PocketPrinter.jpg" />
+    <Resource Include="Pages\GlavPage\PhotoPaper.jpg" />
+    <Resource Include="Pages\GlavPage\EchonCamera.jpg" />
+    <Resource Include="Pages\GlavPage\PhotoCamera.jpg" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="DataBase\BD.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>BD.edmx</DependentUpon>
@@ -255,11 +268,6 @@
       <DependentUpon>BD.edmx</DependentUpon>
       <LastGenOutput>BD.cs</LastGenOutput>
     </Content>
-    <Resource Include="Pages\TovarPage\PhotoCamera.jpg" />
-    <Resource Include="Pages\GlavPage\PocketPrinter.jpg" />
-    <Resource Include="Pages\GlavPage\PhotoPaper.jpg" />
-    <Resource Include="Pages\GlavPage\EchonCamera.jpg" />
-    <Resource Include="Pages\GlavPage\PhotoCamera.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

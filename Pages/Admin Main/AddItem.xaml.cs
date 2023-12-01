@@ -114,9 +114,9 @@ namespace Polaroid.Pages.Admin_Main
             switch (Testo.Text)
             {
                 case "Камеры":
-                    if (TxbShopID.Text == "1")
+                    if (TxbShopID.Text == "2")
                     {
-                        ID_Test.Text = "1";
+                        ID_Test.Text = "Сюда лут";
                         TxbCategoryID.Text = "1";
                     };
                     break;
