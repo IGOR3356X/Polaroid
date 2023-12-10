@@ -28,5 +28,10 @@ namespace Polaroid.Pages.Admin_Main
         {
             Navigating.nav.Navigate(new AUZPage());
         }
+
+        private void Otchot_Btn_Click(object sender, RoutedEventArgs e)
+        {
+            Navigating.nav.Navigate(new Otchot());
+        }
     }
 }

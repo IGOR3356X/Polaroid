@@ -12,20 +12,19 @@
         <TextBox Name="TxbItemName" HorizontalAlignment="Left" Margin="473,282,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="404" Height="30" FontSize="16" FontFamily="Arial"/>
         <TextBox Name="TxbPrice" HorizontalAlignment="Left" Margin="473,350,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="404" Height="30" FontSize="16" FontFamily="Arial"/>
         <TextBox Name="TxbDiscription" HorizontalAlignment="Left" Margin="473,422,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="404" Height="30" FontSize="16" FontFamily="Arial"/>
-        <TextBox Name="TxbCategoryID" HorizontalAlignment="Left" Margin="473,496,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="404" Height="30" FontSize="16" FontFamily="Arial"/>
-        <TextBox Name="TxbShopID" HorizontalAlignment="Left" Margin="473,568,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="404" Height="30" FontSize="16" FontFamily="Arial"/>
+        <TextBox Name="TxbCategoryID" HorizontalAlignment="Left" Margin="1016,439,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="202" Height="30" FontSize="16" FontFamily="Arial" Visibility="Hidden"/>
+        <TextBox Name="TxbShopID" HorizontalAlignment="Left" Margin="1016,481,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="210" Height="30" FontSize="16" FontFamily="Arial" Visibility="Hidden"/>
         <Label Content="Добавить товар" HorizontalAlignment="Center" Margin="0,190,0,0" VerticalAlignment="Top" FontSize="48" FontFamily="Arial" FontWeight="Bold"/>
         <Label Content="ItemName" HorizontalAlignment="Left" Margin="393,282,0,0" VerticalAlignment="Top"/>
         <Label Content="Price" HorizontalAlignment="Left" Margin="415,352,0,0" VerticalAlignment="Top"/>
         <Label Content="Discription" HorizontalAlignment="Left" Margin="390,426,0,0" VerticalAlignment="Top"/>
         <Label Content="CategoryID" HorizontalAlignment="Left" Margin="387,496,0,0" VerticalAlignment="Top"/>
         <Label Content="ShopID" HorizontalAlignment="Left" Margin="408,570,0,0" VerticalAlignment="Top"/>
-        <Button Content="Добавить товар" HorizontalAlignment="Center" Margin="0,610,0,0" VerticalAlignment="Top" Height="56" Width="210" Click="Button_Click"/>
         <Button Name="Back_Btn" Content="Назад" HorizontalAlignment="Left" Margin="38,30,0,0" VerticalAlignment="Top" Height="82" Width="142" Click="Back_Btn_Click"/>
-        <ComboBox Name="Cmb_Category" HorizontalAlignment="Left" Margin="987,279,0,0" VerticalAlignment="Top" Width="169" SelectionChanged="Cmb_Category_SelectionChanged">
-        </ComboBox>
-        <TextBlock Name="Testo" HorizontalAlignment="Left" Margin="1008,332,0,0" VerticalAlignment="Top" Width="168" Text="123"/>
-        <Button Name="Btn_Testos" Content="Button" HorizontalAlignment="Left" Margin="1066,545,0,0" VerticalAlignment="Top" Height="37" Width="110" Click="Btn_Testos_Click"/>
-        <TextBlock Name="ID_Test" HorizontalAlignment="Left" Margin="1022,380,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="120"/>
+        <ComboBox Name="Cmb_Category" HorizontalAlignment="Left" Margin="473,496,0,0" VerticalAlignment="Top" Width="404" SelectionChanged="Cmb_Category_SelectionChanged" Height="30" FontFamily="Arial" FontSize="16"/>
+        <ComboBox Name="Cmb_Shop" HorizontalAlignment="Left" Margin="473,568,0,0" VerticalAlignment="Top" Width="404" SelectionChanged="Cmb_Shop_SelectionChanged" Height="30" FontFamily="Arial" FontSize="16"/>
+        <Button Name="Btn_Testos" Content="Добавить товар" HorizontalAlignment="Left" Margin="554,626,0,0" VerticalAlignment="Top" Height="55" Width="242" Click="Btn_Testos_Click"/>
+        <TextBlock Name="ID_Category" HorizontalAlignment="Left" Margin="1022,380,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="99" Visibility="Hidden"/>
+        <TextBlock Name="ID_Shop" HorizontalAlignment="Left" Margin="1022,357,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="99" Visibility="Hidden" />
     </Grid>
 </Page>

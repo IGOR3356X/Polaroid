@@ -199,5 +199,10 @@ namespace Polaroid.Pages.TovarPage
                 MessageBox.Show("Error: " + ex.Message);
             }
         }
+
+        private void BtnBack_Click(object sender, RoutedEventArgs e)
+        {
+            Navigating.nav.GoBack();
+        }
     }
 }

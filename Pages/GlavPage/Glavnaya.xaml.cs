@@ -58,7 +58,7 @@ namespace Polaroid.Pages.GlavPage
 
                         // Получение соответствующего textblock-элемента по имени
                         if (FindName("texblock" + (index + 1)) is TextBlock textBlock)
-                        {
+                        {   
                             textBlock.Text = itemName; // Заполнение содержимого textblock-элемента
                             index++;
                         }

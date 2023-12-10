@@ -1,9 +1,12 @@
 ﻿using Polaroid.ContentObjects;
 using Polaroid.DataBase;
+using System.Globalization;
+using System;
 using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Documents;
+using System.Windows.Markup;
 
 namespace Polaroid.Pages.Admin_Main
 {
@@ -16,9 +19,8 @@ namespace Polaroid.Pages.Admin_Main
         {
             InitializeComponent();
             LoadDataItems();
+
         }
-
-
         private void AddItem_Btn_Click(object sender, RoutedEventArgs e)
         {
             Navigating.nav.Navigate(new AddItem());
@@ -51,10 +53,6 @@ namespace Polaroid.Pages.Admin_Main
             Connect.connect.SaveChanges();
             MessageBox.Show("Запись изменена");
             LoadDataItems();
-        }
-
-        private void Add_Btn_Click(object sender, RoutedEventArgs e)
-        {
         }
     }
 }

@@ -12,7 +12,7 @@
         <Label Content="Панель Админа" Margin="416,57,416,555" FontSize="48" FontFamily="Arial Black"></Label>
         <Button Name="Item_Btn" Content="Управление Товрами" HorizontalAlignment="Center" VerticalAlignment="Top" Height="78" Width="274" Click="Item_Btn_Click" Margin="0,165,0,0"/>
         <Button Name="User_Btn" Content="Управление Пользователями" HorizontalAlignment="Center" Margin="0,494,0,0" VerticalAlignment="Top" Height="78" Width="274" Click="User_Btn_Click" Visibility="Hidden"/>
-        <Button Name="Otchot_Btn" Content="Сформировать отчёт по продажам за месяц" HorizontalAlignment="Left" Margin="499,282,0,0" VerticalAlignment="Top" Height="78" Width="278"/>
+        <Button Name="Otchot_Btn" Content="Сформировать отчёт по продажам за месяц" HorizontalAlignment="Left" Margin="499,282,0,0" VerticalAlignment="Top" Height="78" Width="278" Click="Otchot_Btn_Click"/>
         <Button Name="Exit_Btn" Content="Выход" HorizontalAlignment="Left" Margin="80,64,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="62" Width="121" Click="Exit_Btn_Click"/>
     </Grid>
 </Page>
