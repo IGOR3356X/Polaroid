@@ -23,27 +23,6 @@ namespace Polaroid.Pages.RegisterFolder
         {
             InitializeComponent();
         }
-
-        private void Manin_Btn_Click(object sender, RoutedEventArgs e)
-        {
-            Navigating.nav.Navigate(new Glavnaya());
-        }
-
-        private void Authorization_Btn_Click(object sender, RoutedEventArgs e)
-        {
-            Navigating.nav.Navigate(new AUZPage());
-        }
-
-        private void Category_Btn_Click(object sender, RoutedEventArgs e)
-        {
-            Navigating.nav.Navigate(new CategoriesPage());
-        }
-
-        private void Info_Btn_Click(object sender, RoutedEventArgs e)
-        {
-            Navigating.nav.Navigate(new SUSPage());
-        }
-
         private void Register_Btn_Click(object sender, RoutedEventArgs e)
         {
             _Login = TxbLogin.Text;
@@ -103,6 +82,11 @@ namespace Polaroid.Pages.RegisterFolder
             {
                 MessageBox.Show("Введите имя");
             }
+        }
+
+        private void BtnBack_Click(object sender, RoutedEventArgs e)
+        {
+            Navigating.nav.GoBack();
         }
     }
 }

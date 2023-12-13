@@ -20,8 +20,7 @@
         <Label Content="Фамилия" HorizontalAlignment="Left" Margin="181,421,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="28"/>
         <Label Content="Пароль" HorizontalAlignment="Left" Margin="738,421,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="28"/>
         <Label Content="Логин" HorizontalAlignment="Left" Margin="738,271,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="28" RenderTransformOrigin="0.399,0.142"/>
-        <Button Name ="Register_Btn" Content="Зарегестрироваться" HorizontalAlignment="Left" Margin="495,594,0,0" VerticalAlignment="Top" Height="71" Width="316" Click="Register_Btn_Click" FontSize="30" FontFamily="Arial">
-        </Button>
-
+        <Button Name ="Register_Btn" Content="Зарегестрироваться" HorizontalAlignment="Left" Margin="495,594,0,0" VerticalAlignment="Top" Height="71" Width="316" Click="Register_Btn_Click" FontSize="30" FontFamily="Arial"/>
+        <Button Name="BtnBack" Content="Назад" HorizontalAlignment="Left" Margin="82,39,0,0" VerticalAlignment="Top" Height="57" Width="163" Click="BtnBack_Click"/>
     </Grid>
 </Page>

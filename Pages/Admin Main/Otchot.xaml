@@ -9,17 +9,15 @@
       Title="Otchot" Background="White">
 
     <Grid>
-        <TextBox Name="TxbFirstDate" HorizontalAlignment="Left" Margin="358,148,0,0" TextWrapping="Wrap" Text="2023-12-09" VerticalAlignment="Top" Height="26" Width="126"/>
-        <TextBox Name="TxbSecondDate" HorizontalAlignment="Left" Margin="526,147,0,0" TextWrapping="Wrap" Text="2023-12-10" VerticalAlignment="Top" Height="28" Width="126"/>
+        <TextBox Name="TxbFirstDate" HorizontalAlignment="Left" Margin="358,148,0,0" TextWrapping="Wrap" Text="2022-10-10" VerticalAlignment="Top" Height="26" Width="123" FontFamily="Arial" FontSize="16"/>
+        <TextBox Name="TxbSecondDate" HorizontalAlignment="Left" Margin="526,147,0,0" TextWrapping="Wrap" Text="2023-12-11" VerticalAlignment="Top" Height="27" Width="126" FontFamily="Arial" FontSize="16"/>
         <Label Content="Создать отчёт" HorizontalAlignment="Center" Margin="0,35,0,0" VerticalAlignment="Top" Width="284" FontFamily="Arial" FontSize="38"/>
         <Label Content="Введите даты(Год/Месяц/Число)" HorizontalAlignment="Left" Margin="56,149,0,0" VerticalAlignment="Top" Width="255" Height="32" FontFamily="Arial" FontSize="16"/>
-        <Label Content="C" HorizontalAlignment="Left" Margin="336,147,0,0" VerticalAlignment="Top"/>
-        <Label Content="ДО" HorizontalAlignment="Left" Margin="494,148,0,0" VerticalAlignment="Top"/>
+        <Label Content="C" HorizontalAlignment="Left" Margin="331,146,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="16"/>
+        <Label Content="ДО" HorizontalAlignment="Left" Margin="488,147,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="16"/>
         <Button Name="Btn_CreateOtchot" Content="Сформировать Отчёт" HorizontalAlignment="Left" Margin="657,147,0,0" VerticalAlignment="Top" Height="27" Width="178" FontFamily="Arial" FontSize="16" Click="Btn_CreateOtchot_Click"/>
-        <DataGrid Name="DgNames" Margin="56,186,700,308"/>
+        <DataGrid Name="DgNames" Margin="56,186,700,257"/>
         <DataGrid Name="DgPrice" Margin="614,186,374,395"/>
-        <TextBox Name="GG" HorizontalAlignment="Left" Margin="988,175,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBox Name="GG2" HorizontalAlignment="Left" Margin="988,198,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-
+        <Button Name="BtnBack" Content="Назад" HorizontalAlignment="Left" Margin="56,35,0,0" VerticalAlignment="Top" Height="37" Width="173" Click="BtnBack_Click"/>
     </Grid>
 </Page>

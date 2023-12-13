@@ -2050,5 +2050,33 @@ namespace Polaroid.Pages.Categories
                 }
             }
         }
+
+        private void TxbTest_Search_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            string Search = TxbTest_Search.Text;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+
+                string query = $"SElect IDItem,ItemName,Price,Category.Name,Shops.Adress from Items Join Category on Category.IDCategory=Items.CategoryID Join Shops on Shops.IDShop=Items.ShopID Where ItemName Like '%{Search}%'";
+                SqlCommand command = new SqlCommand(query, connection);
+                SqlDataReader reader = command.ExecuteReader();
+                ObservableCollection<object> data = new ObservableCollection<object>();
+                while (reader.Read())
+                {
+                    data.Add(new
+                    {
+                        ИД = reader["IDItem"],
+                        НазваниеТовара = reader["ItemName"],
+                        Цена = reader["Price"],
+                        Категория = reader["Name"],
+                        Адрес = reader["Adress"]
+                    });
+                }
+                Viev.ItemsSource = data;
+
+                reader.Close();
+            }
+        }
     }
 }

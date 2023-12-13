@@ -26,8 +26,8 @@
         <CheckBox Name="Photoacsessuars" Content="Фотоаксессуары" HorizontalAlignment="Left" Margin="254,304,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.672,0.331" Width="148"/>
         <CheckBox Name="Sunglasses" Content="Солнцезащитные очки" HorizontalAlignment="Left" Margin="254,324,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.672,0.331" Width="148"/>
         <Label Content="Цена" HorizontalAlignment="Left" Margin="492,218,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.061,-0.128" Width="128"/>
-        <CheckBox Name="Menshe5000" Content="&lt;5000" HorizontalAlignment="Left" Margin="498,257,0,0" VerticalAlignment="Top"/>
-        <CheckBox Name="Bolshe5000" Content=">5000" HorizontalAlignment="Left" Margin="498,294,0,0" VerticalAlignment="Top"/>
+        <RadioButton Name="Menshe5000" Content="&lt;5000" HorizontalAlignment="Left" Margin="498,257,0,0" VerticalAlignment="Top"/>
+        <RadioButton Name="Bolshe5000" Content=">5000" HorizontalAlignment="Left" Margin="498,294,0,0" VerticalAlignment="Top"/>
         <Label Content="Выбери магазин" HorizontalAlignment="Left" Margin="694,218,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.29,0.385" Width="236"/>
         <CheckBox Name="Vse" Content="Любой" HorizontalAlignment="Left" Margin="692,254,0,0" VerticalAlignment="Top"/>
         <CheckBox Name="Moscow" Content="Москва - Варшавское ш., д. 26, строение 12" HorizontalAlignment="Left" Margin="692,274,0,0" VerticalAlignment="Top"/>
@@ -35,5 +35,7 @@
         <CheckBox Name="Ekaterina" Content="Екатеринбург - ул. Бажова, д. 89" HorizontalAlignment="Left" Margin="692,314,0,0" VerticalAlignment="Top"/>
         <DataGrid Name="Viev" Margin="10,360,10,32"></DataGrid>
         <Button Name="Filter_Btn" Content="Отфильтровать" HorizontalAlignment="Left" Margin="1020,239,0,0" VerticalAlignment="Top" Height="80" Width="148" Click="Filter_Btn_Click"/>
+        <TextBox Name="TxbTest_Search" HorizontalAlignment="Left" Margin="737,163,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="357" TextChanged="TxbTest_Search_TextChanged"/>
+        <Button Name="BtnSerachTest" Content="Button" HorizontalAlignment="Left" Margin="986,93,0,0" VerticalAlignment="Top" Height="43" Width="93"/>
     </Grid>
 </Page>

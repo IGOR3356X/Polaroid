@@ -16,5 +16,6 @@
         <Label Content="Забыли пароль?" HorizontalAlignment="Left" Margin="745,464,0,0" VerticalAlignment="Top" Width="103"/>
         <Button Name="Register_Btn" Content="Регистрация" HorizontalAlignment="Left" Margin="475,496,0,0" VerticalAlignment="Top" Width="152" Height="48" Click="Register_Btn_Click" ClickMode="Press"/>
         <Button Name="Login_Btn" Content="Вход" HorizontalAlignment="Left" Margin="681,496,0,0" VerticalAlignment="Top" Width="152" Height="48" Click="Login_Btn_Click" ClickMode="Press"/>
+        <Button Name="BtnVeselchak" Content="Развлекаться" HorizontalAlignment="Left" Margin="172,201,0,0" VerticalAlignment="Top" Height="47" Width="126" Click="BtnVeselchak_Click"/>
     </Grid>
 </Page>

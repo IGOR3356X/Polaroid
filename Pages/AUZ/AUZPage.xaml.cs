@@ -4,6 +4,7 @@ using Polaroid.Pages.Admin_Main;
 using Polaroid.Pages.Categories;
 using Polaroid.Pages.GlavPage;
 using Polaroid.Pages.RegisterFolder;
+using Polaroid.Pages.Testovik;
 using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
@@ -86,6 +87,11 @@ namespace Polaroid.Pages.AUZ
         private void Info_Btn_Click(object sender, RoutedEventArgs e)
         {
             Navigating.nav.Navigate(new SUSPage());
+        }
+
+        private void BtnVeselchak_Click(object sender, RoutedEventArgs e)
+        {
+            Navigating.nav.Navigate(new Testo());
         }
     }
 }

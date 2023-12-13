@@ -83,7 +83,6 @@ namespace Polaroid.Pages.GlavPage
 
                     string query = "SELECT Price FROM Items";
                     SqlCommand command = new SqlCommand(query, connection);
-
                     SqlDataReader reader = command.ExecuteReader();
 
                     int index = 0;
