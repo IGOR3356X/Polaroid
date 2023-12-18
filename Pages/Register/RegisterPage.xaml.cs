@@ -17,8 +17,6 @@ namespace Polaroid.Pages.RegisterFolder
         private string _Login;
         private string _Password;
         private int _RoleID;
-        private string _First_Name;
-        private string _Last_Name;
         public RegisterPage()
         {
             InitializeComponent();
@@ -27,8 +25,6 @@ namespace Polaroid.Pages.RegisterFolder
         {
             _Login = TxbLogin.Text;
             _Password = TxbPassword.Text;
-            _First_Name = TxbName.Text;
-            _Last_Name = TxbSurname.Text;
             if (int.TryParse(TxbRole.Text, out _RoleID))
             {
                 // Валидное целое число получено успешно
@@ -38,52 +34,34 @@ namespace Polaroid.Pages.RegisterFolder
             {
                 MessageBox.Show("Введите корректное значение для RoleID");
             }
-
-            if (_First_Name != null && _First_Name != "")
+            if (_Login != null && _Login != "")
             {
-                if (_Last_Name != null && _Last_Name != "" && _First_Name != "")
+                if (_Password != null && _Password != "" && _Login != "")
                 {
-                    if (_Login != null && _Login != "" && _Last_Name != "" && _First_Name != "")
+                    if (_RoleID != 0 && _Password != "" && _Login != "")
                     {
-                        if (_Password != null && _Password != "" && _Login != "" && _Last_Name != "" && _First_Name != "")
+                        var register = new SignIn()
                         {
-                            if (_RoleID != 0 && _Password != "" && _Login != "" && _Last_Name != "" && _First_Name != "")
-                            {
-                                var register = new SignIn()
-                                {
-                                    Login = _Login,
-                                    Password = _Password,
-                                    RoleID = _RoleID,
-                                    First_Name = _First_Name,
-                                    Last_Name = _Last_Name,
-                                };
-                                Connect.connect.SignIn.Add(register);
-                                Connect.connect.SaveChanges();
-                                MessageBox.Show("Вы успешно зарегестрировались", "Увеомление", MessageBoxButton.OK, MessageBoxImage.Information);
-                            }
-                        }
-                        else
-                        {
-                            MessageBox.Show("Введите пароль");
-                        }
+                            Login = _Login,
+                            Password = _Password,
+                            RoleID = _RoleID,
+                        };
+                        Connect.connect.SignIn.Add(register);
+                        Connect.connect.SaveChanges();
+                        MessageBox.Show("Вы успешно зарегестрировались", "Увеомление", MessageBoxButton.OK, MessageBoxImage.Information);
                     }
-                    else
-                    {
-                        MessageBox.Show("Введите логин");
-                    }
-
                 }
                 else
                 {
-                    MessageBox.Show("Введите Фамилию");
+                    MessageBox.Show("Введите пароль");
                 }
             }
             else
             {
-                MessageBox.Show("Введите имя");
+                MessageBox.Show("Введите логин");
             }
+               
         }
-
         private void BtnBack_Click(object sender, RoutedEventArgs e)
         {
             Navigating.nav.GoBack();
