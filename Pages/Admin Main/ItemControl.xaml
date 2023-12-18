@@ -45,7 +45,9 @@
                     <DataGridTextColumn Header="Цена" Width="*" Binding="{Binding Price}"/>
                     <DataGridTextColumn Header="Описание" Width="*" Binding="{Binding Discription}"/>
                     <DataGridTextColumn Header="ИД Категории" Width="*" Binding="{Binding CategoryID}"/>
+                    <DataGridTextColumn Header="Имя Категории" Width="*" Binding="{Binding Category.Name}"/>
                     <DataGridTextColumn Header="ИД Магазина" Width="*" Binding="{Binding ShopID}"/>
+                    <DataGridTextColumn Header="Адрес Магазина" Width="*" Binding="{Binding Shops.Adress}"/>
                     <DataGridTemplateColumn Header="Удалить/Изменить" Width="200">
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>

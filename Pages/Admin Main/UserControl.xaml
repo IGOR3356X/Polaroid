@@ -9,6 +9,56 @@
       Title="UserControl" Background="White">
 
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="10*"/>
+        </Grid.RowDefinitions>
+        <DockPanel Grid.Row="0">
+            <Label Grid.RowSpan="1" VerticalAlignment="Center" FontSize="18">Admin</Label>
+            <Button 
+                Name="AddItem_Btn"
+                Content="Добавить товар"
+                Click="AddItem_Btn_Click"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Left"
+                Margin="20 0 0 0"   
+                />
+            <Button 
+                Name="Btn_exit"
+                Content="Назад"
+                Width="129" Height="29"
+                Click="Btn_Exit_Click"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Right"
+                Margin="0,0,10,0"/>
+        </DockPanel>
+        <DockPanel Margin="0,10,22,384" Grid.Row="1">
+            <DataGrid 
+                Name="DgProducts"
+                AutoGenerateColumns="False"
+                RowBackground="White"
+                AlternatingRowBackground="White"
+                HorizontalScrollBarVisibility="Disabled" Height="262" SelectedIndex="2" ScrollViewer.CanContentScroll="True" VerticalScrollBarVisibility="Visible" Width="1259"
+                VerticalAlignment="Top">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="ИдПользователя" Width="*" Binding="{Binding IDItem}"/>
+                    <DataGridTextColumn Header="Логин" Width="*" Binding="{Binding ItemName}"/>
+                    <DataGridTextColumn Header="Пароль" Width="*" Binding="{Binding Price}"/>
+                    <DataGridTextColumn Header="ИДРоли" Width="*" Binding="{Binding Discription}"/>
+                    <DataGridTextColumn Header="ИмяРоли" Width="*" Binding="{Binding CategoryID}"/>
+                    <DataGridTemplateColumn Header="Удалить/Изменить" Width="200">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal">
+                                    <Button Name="Delete_Btn_Click" Click="Delete_Btn_Click" Content="Удалить"/>
+                                    <Button Name="Edit_Btn" Margin="5,0,0,0" Click="Edit_Btn_Click" Content="Изменить"/>
+                                </StackPanel>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+        </DockPanel>
+        <TextBox HorizontalAlignment="Left" Margin="112,392,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.438,0.225"/>
     </Grid>
 </Page>

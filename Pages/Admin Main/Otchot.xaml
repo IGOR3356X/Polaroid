@@ -16,8 +16,8 @@
         <Label Content="C" HorizontalAlignment="Left" Margin="331,146,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="16"/>
         <Label Content="ДО" HorizontalAlignment="Left" Margin="488,147,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="16"/>
         <Button Name="Btn_CreateOtchot" Content="Сформировать Отчёт" HorizontalAlignment="Left" Margin="657,147,0,0" VerticalAlignment="Top" Height="27" Width="178" FontFamily="Arial" FontSize="16" Click="Btn_CreateOtchot_Click"/>
-        <DataGrid Name="DgNames" Margin="56,186,700,257"/>
-        <DataGrid Name="DgPrice" Margin="614,186,374,395"/>
+        <DataGrid Name="DgNames" Margin="56,186,677,229"/>
+        <DataGrid Name="DgPrice" Margin="657,186,240,326"/>
         <Button Name="BtnBack" Content="Назад" HorizontalAlignment="Left" Margin="56,35,0,0" VerticalAlignment="Top" Height="37" Width="173" Click="BtnBack_Click"/>
     </Grid>
 </Page>

@@ -9,33 +9,37 @@
       Title="CategoriesPage" Background="White">
 
     <Grid>
-        <Button Name="Manin_Btn" Content="Назад" HorizontalAlignment="Left" Margin="64,43,0,0" VerticalAlignment="Top" Height="35" Width="190" FontFamily="Arial" Padding="0,0,0,0" Click="Manin_Btn_Click" BorderBrush="White"/>
-        <Image HorizontalAlignment="Center" Height="117" Margin="0,10,0,0" VerticalAlignment="Top" Width="194" Source="/i.png">
+        <Rectangle HorizontalAlignment="Left" Height="191" Margin="335,154,0,0" Stroke="Black" VerticalAlignment="Top"  Width="317"/>
+        <Slider x:Name="SldMinPrice" HorizontalAlignment="Left" Margin="344,190,0,0" VerticalAlignment="Top" Width="291"  TickPlacement="Both" Maximum="50" BorderBrush="Black" BorderThickness="1,1,1,1"/>
+        <Button x:Name="Manin_Btn" Content="Назад" HorizontalAlignment="Left" Margin="64,43,0,0" VerticalAlignment="Top" Height="35" Width="190" FontFamily="Arial" Padding="0,0,0,0" Click="Manin_Btn_Click" BorderBrush="White"/>
+        <Image HorizontalAlignment="Center" Height="117" Margin="0,5,0,0" VerticalAlignment="Top" Width="194" Source="/i.png">
             <Image.OpacityMask>
                 <ImageBrush ImageSource="/i.png"/>
             </Image.OpacityMask>
         </Image>
-        <Rectangle HorizontalAlignment="Left" Height="137" Margin="248,211,0,0" Stroke="Black" VerticalAlignment="Top" Width="206"/>
-        <Rectangle HorizontalAlignment="Left" Height="124" Margin="688,218,0,0" Stroke="Black" VerticalAlignment="Top" Width="288"/>
-        <Rectangle HorizontalAlignment="Left" Height="137" Margin="486,208,0,0" Stroke="Black" VerticalAlignment="Top" Width="142"/>
-        <Label Content="Поиск" HorizontalAlignment="Left" Margin="574,131,0,0" VerticalAlignment="Top" Width="116" Height="50" FontSize="36"/>
-        <Label Content="Категории" HorizontalAlignment="Left" Margin="260,213,0,0" VerticalAlignment="Top" Width="194"/>
-        <CheckBox Name="Camera" Content="Камеры" HorizontalAlignment="Left" Margin="254,244,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.672,0.331" Width="148"/>
-        <CheckBox Name ="Printers" Content="Принтеры" HorizontalAlignment="Left" Margin="254,264,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.672,0.331" Width="148"/>
-        <CheckBox Name="ActionCameras" Content="Экшн камеры" HorizontalAlignment="Left" Margin="254,284,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.672,0.331" Width="148"/>
-        <CheckBox Name="Photoacsessuars" Content="Фотоаксессуары" HorizontalAlignment="Left" Margin="254,304,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.672,0.331" Width="148"/>
-        <CheckBox Name="Sunglasses" Content="Солнцезащитные очки" HorizontalAlignment="Left" Margin="254,324,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.672,0.331" Width="148"/>
-        <Label Content="Цена" HorizontalAlignment="Left" Margin="492,218,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.061,-0.128" Width="128"/>
-        <RadioButton Name="Menshe5000" Content="&lt;5000" HorizontalAlignment="Left" Margin="498,257,0,0" VerticalAlignment="Top"/>
-        <RadioButton Name="Bolshe5000" Content=">5000" HorizontalAlignment="Left" Margin="498,294,0,0" VerticalAlignment="Top"/>
-        <Label Content="Выбери магазин" HorizontalAlignment="Left" Margin="694,218,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.29,0.385" Width="236"/>
-        <CheckBox Name="Vse" Content="Любой" HorizontalAlignment="Left" Margin="692,254,0,0" VerticalAlignment="Top"/>
-        <CheckBox Name="Moscow" Content="Москва - Варшавское ш., д. 26, строение 12" HorizontalAlignment="Left" Margin="692,274,0,0" VerticalAlignment="Top"/>
-        <CheckBox Name="StPiter" Content="Санкт-Петербург - ул. Савушкина, д. 24" HorizontalAlignment="Left" Margin="692,294,0,0" VerticalAlignment="Top"/>
-        <CheckBox Name="Ekaterina" Content="Екатеринбург - ул. Бажова, д. 89" HorizontalAlignment="Left" Margin="692,314,0,0" VerticalAlignment="Top"/>
-        <DataGrid Name="Viev" Margin="10,360,10,32"></DataGrid>
-        <Button Name="Filter_Btn" Content="Отфильтровать" HorizontalAlignment="Left" Margin="1020,239,0,0" VerticalAlignment="Top" Height="80" Width="148" Click="Filter_Btn_Click"/>
-        <TextBox Name="TxbTest_Search" HorizontalAlignment="Left" Margin="737,163,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="357" TextChanged="TxbTest_Search_TextChanged"/>
-        <Button Name="BtnSerachTest" Content="Button" HorizontalAlignment="Left" Margin="986,93,0,0" VerticalAlignment="Top" Height="43" Width="93"/>
+        <Rectangle HorizontalAlignment="Left" Height="137" Margin="44,209,0,0" Stroke="Black" VerticalAlignment="Top" Width="206"/>
+        <Rectangle HorizontalAlignment="Left" Height="124" Margin="690,151,0,0" Stroke="Black" VerticalAlignment="Top" Width="288"/>
+        <Label Content="Поиск" HorizontalAlignment="Center" Margin="0,93,0,0" VerticalAlignment="Top" Width="116" Height="56" FontSize="36"/>
+        <Label Content="Категории" HorizontalAlignment="Left" Margin="56,211,0,0" VerticalAlignment="Top" Width="194"/>
+        <CheckBox x:Name="Camera" Content="Камеры" HorizontalAlignment="Left" Margin="50,242,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.672,0.331" Width="148"/>
+        <CheckBox x:Name ="Printers" Content="Принтеры" HorizontalAlignment="Left" Margin="50,262,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.672,0.331" Width="148"/>
+        <CheckBox x:Name="ActionCameras" Content="Экшн камеры" HorizontalAlignment="Left" Margin="50,282,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.672,0.331" Width="148"/>
+        <CheckBox x:Name="Photoacsessuars" Content="Фотоаксессуары" HorizontalAlignment="Left" Margin="50,302,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.672,0.331" Width="148"/>
+        <CheckBox x:Name="Sunglasses" Content="Солнцезащитные очки" HorizontalAlignment="Left" Margin="50,322,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.672,0.331" Width="148"/>
+        <Label Content="Цена" HorizontalAlignment="Left" Margin="460,159,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.061,-0.128" Width="42"/>
+        <Label Content="Выбери магазин" HorizontalAlignment="Left" Margin="696,151,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.29,0.385" Width="236"/>
+        <CheckBox x:Name="Vse" Content="Любой" HorizontalAlignment="Left" Margin="694,187,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="Moscow" Content="Москва - Варшавское ш., д. 26, строение 12" HorizontalAlignment="Left" Margin="694,207,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="StPiter" Content="Санкт-Петербург - ул. Савушкина, д. 24" HorizontalAlignment="Left" Margin="694,227,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="Ekaterina" Content="Екатеринбург - ул. Бажова, д. 89" HorizontalAlignment="Left" Margin="694,247,0,0" VerticalAlignment="Top"/>
+        <DataGrid x:Name="Viev" Margin="10,360,10,32"/>
+        <Button x:Name="Filter_Btn" Content="Отфильтровать" HorizontalAlignment="Left" Margin="1022,172,0,0" VerticalAlignment="Top" Height="80" Width="148" Click="Filter_Btn_Click"/>
+        <TextBox Name="TxbTest_Search" HorizontalAlignment="Left" Margin="689,313,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="378" TextChanged="TxbTest_Search_TextChanged" Height="33"/>
+        <TextBox Name="TxbMinPrice" HorizontalAlignment="Left" Margin="344,227,0,0" TextWrapping="Wrap" Text="{Binding ElementName=SldMinPrice,Path=Value, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="120"/>
+        <Slider Name="SldMaxPrice" HorizontalAlignment="Left" Margin="344,282,0,0" VerticalAlignment="Top" Width="291" TickPlacement="Both" Maximum="50" BorderBrush="Black" BorderThickness="1,1,1,1"/>
+        <TextBox Name="TxbMaxPrice" HorizontalAlignment="Left" Margin="344,321,0,0" TextWrapping="Wrap" Text="{Binding ElementName=SldMaxPrice,Path=Value, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="120"/>
+        <Label Content="От" HorizontalAlignment="Left" Margin="344,159,0,0" VerticalAlignment="Top"/>
+        <Label Content="До" HorizontalAlignment="Left" Margin="344,250,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="Поиск" HorizontalAlignment="Left" Margin="689,282,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Page>

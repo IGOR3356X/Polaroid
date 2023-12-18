@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Dynamic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -29,12 +30,32 @@ namespace Polaroid.Pages.Testovik
         }
         private void ProgressUpdate(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
-            TxbPrice.Text = ""+ Math.Round(e.NewValue);
+            TxbPrice.Text = ""+Math.Round(e.NewValue);
+ 
         }
 
         private void TxbPrice_TextChanged(object sender, TextChangedEventArgs e)
         {
             
+        }
+
+        private void BtnCreate_Click(object sender, RoutedEventArgs e)
+        {
+
+            Button G = new Button
+            {
+                HorizontalAlignment = HorizontalAlignment.Center,
+                VerticalAlignment = VerticalAlignment.Center,
+                Height = 100,
+                Width = 100,
+                Content = "GG"
+            };
+            GEGE.Children.Add(G);
+            G.Click += new RoutedEventHandler(G_Click);
+        }
+        private void G_Click (object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Ало ПИД");
         }
     }
 }
