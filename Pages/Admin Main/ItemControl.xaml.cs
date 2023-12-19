@@ -54,5 +54,11 @@ namespace Polaroid.Pages.Admin_Main
             MessageBox.Show("Запись изменена");
             LoadDataItems();
         }
+
+        private void BtnInfo_Click(object sender, RoutedEventArgs e)
+        {
+            HelpWindow okno = new HelpWindow();
+            okno.Show();
+        }
     }
 }

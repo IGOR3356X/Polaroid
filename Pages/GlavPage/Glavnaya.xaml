@@ -52,5 +52,6 @@
         <TextBox HorizontalAlignment="Left" Margin="195,125,0,0" TextWrapping="Wrap" Text="Поиск" VerticalAlignment="Top" Width="629" Height="48" FontFamily="Arial" FontSize="36"/>
         <Label Content="🔍" HorizontalAlignment="Left" Margin="776,126,0,0" VerticalAlignment="Top" FontSize="28"/>
         <Button x:Name="Category_Btn" Content="Поиск" HorizontalAlignment="Left" Margin="197,126,0,0" VerticalAlignment="Top" Height="47" Width="627" FontFamily="Arial" Click="Category_Btn_Click" BorderBrush="White" Opacity="0"/>
+        <Button Name="BtnExit" Content="Выйти" HorizontalAlignment="Left" Margin="1138,15,0,0" VerticalAlignment="Top" Height="50" Width="121" Click="BtnExit_Click"/>
     </Grid>
 </Page>

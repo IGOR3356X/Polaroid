@@ -7,6 +7,7 @@ using System;
 using System.Data.SqlClient;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Navigation;
 
 namespace Polaroid.Pages.GlavPage
 {
@@ -110,6 +111,22 @@ namespace Polaroid.Pages.GlavPage
         private void Btn_Tovar_Click(object sender, RoutedEventArgs e)
         {
             Navigating.nav.Navigate(new ItemPage());
+        }
+
+        private void BtnExit_Click(object sender, RoutedEventArgs e)
+        {
+            string expectedPassword = "4321";
+            string enteredPassword = Microsoft.VisualBasic.Interaction.InputBox("Введите пароль:", "Пароль");
+
+            if (enteredPassword == expectedPassword)
+            {
+                // Navigate to another page
+                Navigating.nav.Navigate(new AUZPage());
+            }
+            else
+            {
+                MessageBox.Show("Некорректный пароль");
+            }
         }
     }
 }

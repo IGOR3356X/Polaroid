@@ -26,5 +26,6 @@
         <Label Content="Наличие в магазинах:" HorizontalAlignment="Left" Margin="561,471,0,0" VerticalAlignment="Top" Width="194" FontFamily="Arial" FontSize="16"/>
         <TextBlock Name="TxbAdress1" HorizontalAlignment="Left" Margin="569,504,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="21" Width="282" FontFamily="Arial" FontSize="16"/>
         <Button Name="BtnBack" Content="Назад" HorizontalAlignment="Left" Margin="82,36,0,0" VerticalAlignment="Top" Height="57" Width="209" Click="BtnBack_Click"/>
+        <TextBlock Name="TxbAdress2" HorizontalAlignment="Left" Margin="569,530,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="21" Width="282" FontFamily="Arial" FontSize="16"/>
     </Grid>
 </Page>

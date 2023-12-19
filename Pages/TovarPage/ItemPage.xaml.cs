@@ -173,7 +173,7 @@ namespace Polaroid.Pages.TovarPage
                 {
                     connection.Open();
 
-                    string query = "Select Adress from Shops Join Items on Items.ShopID=Shops.IDShop where IDShop = 4 and IDItem = 1";
+                    string query = "Select Adress from Shops Join Items on Items.ShopID=Shops.IDShop where ItemName Like '%Моментальный фотоаппарат Polaroid%'";
                     SqlCommand command = new SqlCommand(query, connection);
 
                     SqlDataReader reader = command.ExecuteReader();

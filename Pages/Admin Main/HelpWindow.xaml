@@ -1,0 +1,26 @@
+﻿<Window x:Class="Polaroid.Pages.Admin_Main.HelpWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Polaroid.Pages.Admin_Main"
+        mc:Ignorable="d"
+        Title="HelpWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="Как правильно пользоваться изменением/удалением?" HorizontalAlignment="Left" Margin="28,27,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <TextBlock HorizontalAlignment="Left" Margin="34,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="354" Width="756" FontSize="16">
+            Как пользоваться изменением? <LineBreak/>
+            1.Выберите нужный столбец и строку <LineBreak/>
+            2.<Run Foreground="Red" FontSize="18">Внимание:</Run>Если это слобцы <Run Foreground="Red" FontSize="18">Имя категории и Адрес Магазина </Run>  то они редактируются через <Run Foreground="Red" FontSize="18">ИД Категории и ИД Магадина!</Run> <LineBreak/>
+            3.После того как отредактировали нужную строку нажимаем клавишу Enter, далее на кнопку "Изменить" <LineBreak/>
+            <LineBreak/>
+            Как пользовться удалением? <LineBreak/>
+            1.Нажмите кнопку удалить рядом с ненужной записью <LineBreak/>
+            <LineBreak/>
+            <LineBreak/>
+            Небольшая справка по ИД Категориям и ИД магазинам: <LineBreak/>
+            ИД Категории 1 - Фотоаппарат 2 - Принтеры 3 - Экшн камеры 4 - Фотоаксессуары 5 - Солнцезащитные очки <LineBreak/>
+            ИД Магазинов 2 - Варшавское ш., д. 26, строение 12 3 - ул. Савушкина, д. 24; 4 - ул. Бажова, д. 89
+        </TextBlock>
+    </Grid>
+</Window>

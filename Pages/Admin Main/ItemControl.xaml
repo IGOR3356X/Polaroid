@@ -25,7 +25,7 @@
             <Button 
                 Name="Btn_exit"
                 Content="Назад"
-                Width="129" Height="29"
+                Width="120" Height="29"
                 Click="Btn_Exit_Click"
                 VerticalAlignment="Center"
                 HorizontalAlignment="Right"
@@ -61,5 +61,11 @@
                 </DataGrid.Columns>
             </DataGrid>
         </DockPanel>
+        <Button
+                Name="BtnInfo"
+                Content="Справка"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center" Margin="1010,0,0,0" Height="29" Width="110" Click="BtnInfo_Click"
+                />
     </Grid>
 </Page>

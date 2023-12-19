@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Polaroid"
         mc:Ignorable="d"
-        Title="MainWindow" Height="720" Width="1280" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+        Title="PolaroidApp" Height="720" Width="1280" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="C:\Users\igor3\source\repos\IGOR3356X\Polaroid\icon.png">
     <Grid>
         <Frame
             Name="FrmMain"
